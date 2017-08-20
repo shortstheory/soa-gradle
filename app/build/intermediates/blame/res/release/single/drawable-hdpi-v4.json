@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/release/drawable-hdpi-v4/delete.jpg",
+        "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/delete.jpg"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/release/drawable-hdpi-v4/login_bckgrnd.jpg",
+        "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/login_bckgrnd.jpg"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/release/drawable-hdpi-v4/theme1.jpg",
+        "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/theme1.jpg"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_dollar.jpeg",
+        "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/ic_dollar.jpeg"
+    }
+]

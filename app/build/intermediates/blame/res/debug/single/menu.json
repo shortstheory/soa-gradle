@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/menu/login_menu.xml",
+        "source": "/home/nic/android-dev/andiStudio/app/src/main/res/menu/login_menu.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/nic/android-dev/andiStudio/app/src/main/res/menu/main.xml"
+    }
+]

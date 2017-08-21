@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/nic/android-dev/base-andi/app/src/main/assets"><file name="default.jpeg" path="/home/nic/android-dev/base-andi/app/src/main/assets/default.jpeg"/></source><source path="/home/nic/android-dev/base-andi/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/home/nic/android-dev/base-andi/app/src/debug/assets"/></dataSet></merger>

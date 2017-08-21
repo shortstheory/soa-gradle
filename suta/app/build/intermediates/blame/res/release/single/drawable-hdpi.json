@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-hdpi/ic_launcher.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-hdpi/icon.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-hdpi/swifiic_logo.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-hdpi/swifiic_logo.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-hdpi/ic_action_settings.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-hdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-hdpi/ic_users.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-hdpi/ic_users.png"
+    }
+]

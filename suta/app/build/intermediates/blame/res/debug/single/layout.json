@@ -4,6 +4,10 @@
         "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/layout/notificationact.xml"
     },
     {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/debug/layout/userlist_item_lib.xml",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/suta/base/unspecified/res/layout/userlist_item_lib.xml"
+    },
+    {
         "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/layout/activity_main.xml"
     }

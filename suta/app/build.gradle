@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
-
 android {
-    compileSdkVersion 23
+    compileSdkVersion 22
     buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "in.swifiic.plat.app.suta.andi"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 22
     }
 
     buildTypes {
@@ -16,4 +15,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile project(':base')
 }

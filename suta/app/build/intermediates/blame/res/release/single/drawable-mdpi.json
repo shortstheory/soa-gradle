@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-mdpi/ic_launcher.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-mdpi/ic_action_settings.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-mdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-mdpi/ic_users.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-mdpi/ic_users.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/merged/release/drawable-mdpi/icon.png",
+        "source": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/drawable-mdpi/icon.png"
+    }
+]

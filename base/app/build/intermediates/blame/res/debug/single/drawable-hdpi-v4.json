@@ -2,5 +2,9 @@
     {
         "merged": "/home/nic/android-dev/base-andi/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
         "source": "/home/nic/android-dev/base-andi/app/src/main/res/drawable-hdpi/ic_node.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/base/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
+        "source": "/home/nic/android-dev/andiStudio/base/app/src/main/res/drawable-hdpi/ic_node.png"
     }
 ]

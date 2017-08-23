@@ -2679,7 +2679,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../msngr" />
     <property name="device.picker.selection" value="Galaxy_Nexus_API_25" />
   </component>
   <component name="RunManager" selected="Android App.app">

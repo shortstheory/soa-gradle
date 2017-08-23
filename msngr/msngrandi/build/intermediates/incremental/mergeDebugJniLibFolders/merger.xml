@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/nic/android-dev/andiStudio/msngr0/msngrandi/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/nic/android-dev/andiStudio/msngr0/msngrandi/src/debug/jniLibs"/></dataSet></merger>

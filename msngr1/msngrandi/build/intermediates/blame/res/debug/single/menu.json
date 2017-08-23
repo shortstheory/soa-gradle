@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/menu/menu_chat_summary.xml",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/menu/menu_chat_summary.xml"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/menu/context_chat_summary.xml",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/menu/context_chat_summary.xml"
+    }
+]

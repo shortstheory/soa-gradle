@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/res/merged/debug/xml/pref_general.xml",
+        "source": "/home/parivraajak/soa-gradle/msngr/msngrandi/src/main/res/xml/pref_general.xml"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/xml/pref_general.xml",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/xml/pref_general.xml"
+    }
+]

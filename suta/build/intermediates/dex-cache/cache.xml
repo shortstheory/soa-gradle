@@ -2,58 +2,67 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/nic/android-dev/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_54b8576903e016ecb6730894008531cc733a80be.jar" />
+        sha1="a659024a7b5e0ad102baf061a313195b9cea83cd">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_41e4d682bd9151e2f99094e7ecde91985c965b2a/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/suta/base/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4c5c4658af81e0316e930b401e4559c3e737bb62">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/suta-base-unspecified_e95225f662b608adb8634d7cd5b3d24f5668f55a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/suta/base/unspecified/jars/libs/android-ibrdtn-api.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="62b5ecab2badcd4201c9591477f66758b604c848">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/android-ibrdtn-api_b279b6da533ddf5cdab28e8121cdda1a2699d519.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_9d9722289f3cb9083349091bad306b770d711308.jar" />
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.1_9d9722289f3cb9083349091bad306b770d711308/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/nic/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/simple-xml-2.7.1_513d38d6521a7925bbc180fb42c163c34f425f0e.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.1_b4400fd6f7807121cb982754f607ddb5b7751c52.jar" />
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.2.1_b4400fd6f7807121cb982754f607ddb5b7751c52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nic/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/simple-xml-2.7.1_513d38d6521a7925bbc180fb42c163c34f425f0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/suta/base/unspecified/jars/libs/android-ibrdtn-api.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="62b5ecab2badcd4201c9591477f66758b604c848">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/8/android-ibrdtn-api_b279b6da533ddf5cdab28e8121cdda1a2699d519/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="328b5e31c6bf9225b28277c596c271233c74d89a">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a0b77521fb93adcdd5cc2d4520e96821a12839ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nic/android-dev/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.2.1_54b8576903e016ecb6730894008531cc733a80be/classes.dex" />
     </item>
 
 </items>

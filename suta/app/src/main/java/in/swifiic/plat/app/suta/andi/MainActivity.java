@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.StringTokenizer;
 
 import in.swifiic.plat.app.suta.andi.R;
+import in.swifiic.plat.app.suta.andi.mgmt.TrackService;
 import in.swifiic.plat.helper.andi.ui.SwifiicActivity;
 import in.swifiic.plat.helper.andi.ui.UserChooserActivity;
 import android.content.Intent;
@@ -97,9 +98,9 @@ public class MainActivity extends SwifiicActivity  {
         currTime.setText(pref.getString("notifSentByHubAt","waiting"));
         transactions.setText(pref.getString("revisedTransactionDetails","waiting"));
 
-		Intent serviceIntent = new Intent();
-		serviceIntent.setAction("in.swifiic.plat.app.suta.andi.mgmt.TrackService");
-		startService(serviceIntent); 
+        Intent serviceIntent = new Intent(this, TrackService.class);
+        //serviceIntent.setAction("in.swifiic.plat.app.suta.andi.mgmt.TrackService");
+        this.startService(serviceIntent);
 		
     }
     public void onResume()

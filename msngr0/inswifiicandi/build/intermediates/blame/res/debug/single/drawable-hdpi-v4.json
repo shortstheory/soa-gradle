@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/inswifiicandi/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
+        "source": "/home/parivraajak/soa-gradle/msngr/inswifiicandi/src/main/res/drawable-hdpi/ic_node.png"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/inswifiicandi/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/inswifiicandi/src/main/res/drawable-hdpi/ic_node.png"
+    }
+]

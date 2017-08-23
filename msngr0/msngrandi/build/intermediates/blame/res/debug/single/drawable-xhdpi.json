@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_users.png",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/drawable-xhdpi/ic_action_users.png"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_settings.png",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/drawable-xhdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_user_pic_default.png",
+        "source": "/home/parivraajak/soa-gradle/msngr/msngrandi/src/main/res/drawable-xhdpi/ic_user_pic_default.png"
+    },
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_users.png",
+        "source": "/home/parivraajak/soa-gradle/msngr/msngrandi/src/main/res/drawable-xhdpi/ic_action_users.png"
+    },
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/home/parivraajak/soa-gradle/msngr/msngrandi/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_user_pic_default.png",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/drawable-xhdpi/ic_user_pic_default.png"
+    },
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_name.png",
+        "source": "/home/parivraajak/soa-gradle/msngr/msngrandi/src/main/res/drawable-xhdpi/ic_action_name.png"
+    },
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_settings.png",
+        "source": "/home/parivraajak/soa-gradle/msngr/msngrandi/src/main/res/drawable-xhdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_name.png",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/src/main/res/drawable-xhdpi/ic_action_name.png"
+    }
+]

@@ -1,0 +1,5 @@
+int drawable ic_node 0x7f020000
+int id imageIcon 0x7f040000
+int id textAlias 0x7f040001
+int id textName 0x7f040002
+int layout userlist_item_lib 0x7f030000

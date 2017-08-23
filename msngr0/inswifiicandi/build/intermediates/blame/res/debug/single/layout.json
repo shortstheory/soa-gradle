@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/parivraajak/soa-gradle/msngr/inswifiicandi/build/intermediates/res/merged/debug/layout/userlist_item_lib.xml",
+        "source": "/home/parivraajak/soa-gradle/msngr/inswifiicandi/src/main/res/layout/userlist_item_lib.xml"
+    },
+    {
+        "merged": "/home/parivraajak/repo/app/msngr/andi1/inswifiicandi/build/intermediates/res/merged/debug/layout/userlist_item_lib.xml",
+        "source": "/home/parivraajak/repo/app/msngr/andi1/inswifiicandi/src/main/res/layout/userlist_item_lib.xml"
+    }
+]

@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="action_settings">Settings</string>
-    <string name="action_userList">User List</string>
+    <string name="action_userList">User list</string>
     <string name="app_build_ctx">nic-ThinkPad /home/nic/swifiic/repo/plat/app/suta/andi nic</string>
     <string name="app_build_date">20170819</string>
     <string name="app_name">SUTA</string>
@@ -12,10 +12,10 @@
     <string name="pref_default_reset">Set Reset in SUTA - Devlopment only</string>
     <string name="pref_title_hub_address">SWiFiIC Hub Address</string>
     <string name="pref_title_my_identity">User Name</string>
-    <string name="remainingCredits">Remaining Credits :</string>
+    <string name="remainingCredits">Remaining credits:</string>
     <string name="title_activity_settings">Settings</string>
-    <string name="transactions">Transactions :</string>
-    <string name="updatedAt">Update sent by hub at :</string>
+    <string name="transactions">Transactions:</string>
+    <string name="updatedAt">Update sent by hub at:</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in

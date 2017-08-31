@@ -1,7 +1,4 @@
-#Wed Aug 23 18:37:21 IST 2017
-base.0=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_41e4d682bd9151e2f99094e7ecde91985c965b2a
-renamed.1=classes2.dex
+#Fri Sep 01 00:55:36 IST 2017
+base.0=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.1=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a0b77521fb93adcdd5cc2d4520e96821a12839ab/classes.dex
-base.1=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a0b77521fb93adcdd5cc2d4520e96821a12839ab
-file.0=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_41e4d682bd9151e2f99094e7ecde91985c965b2a/classes.dex
+file.0=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

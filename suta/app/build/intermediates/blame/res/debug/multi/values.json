@@ -91,9 +91,9 @@
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 511,
+                        "startOffset": 508,
                         "endColumn": 100,
-                        "endOffset": 607
+                        "endOffset": 604
                     }
                 }
             },
@@ -110,9 +110,9 @@
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 459,
+                        "startOffset": 456,
                         "endColumn": 51,
-                        "endOffset": 506
+                        "endOffset": 503
                     }
                 }
             },
@@ -235,8 +235,8 @@
                     "startLine": 14,
                     "startColumn": 4,
                     "startOffset": 820,
-                    "endColumn": 64,
-                    "endOffset": 880
+                    "endColumn": 63,
+                    "endOffset": 879
                 },
                 "from": {
                     "file": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/values/strings.xml",
@@ -244,8 +244,8 @@
                         "startLine": 6,
                         "startColumn": 4,
                         "startOffset": 205,
-                        "endColumn": 64,
-                        "endOffset": 265
+                        "endColumn": 63,
+                        "endOffset": 264
                     }
                 }
             },
@@ -253,9 +253,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 885,
+                    "startOffset": 884,
                     "endColumn": 60,
-                    "endOffset": 941
+                    "endOffset": 940
                 },
                 "from": {
                     "file": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/values/strings_activity_settings.xml",
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 946,
-                    "endColumn": 55,
-                    "endOffset": 997
+                    "startOffset": 945,
+                    "endColumn": 54,
+                    "endOffset": 995
                 },
                 "from": {
                     "file": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 332,
-                        "endColumn": 55,
-                        "endOffset": 383
+                        "startOffset": 330,
+                        "endColumn": 54,
+                        "endOffset": 380
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1002,
-                    "endColumn": 61,
-                    "endOffset": 1059
+                    "startOffset": 1000,
+                    "endColumn": 60,
+                    "endOffset": 1056
                 },
                 "from": {
                     "file": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 270,
-                        "endColumn": 61,
-                        "endOffset": 327
+                        "startOffset": 269,
+                        "endColumn": 60,
+                        "endOffset": 325
                     }
                 }
             },
@@ -310,10 +310,10 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1064,
+                    "startOffset": 1061,
                     "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 1350
+                    "endOffset": 1347
                 },
                 "from": {
                     "file": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/values/styles.xml",
@@ -331,10 +331,10 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1355,
+                    "startOffset": 1352,
                     "endLine": 27,
                     "endColumn": 12,
-                    "endOffset": 1510
+                    "endOffset": 1507
                 },
                 "from": {
                     "file": "/home/nic/android-dev/andiStudio/suta/app/src/main/res/values/styles.xml",

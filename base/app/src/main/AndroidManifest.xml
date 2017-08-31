@@ -32,7 +32,7 @@
 	            <action android:name="de.tubs.ibr.dtn.intent.STATUS_REPORT" />
 	        </intent-filter>
 	    </receiver>
-	    
+
    	    <receiver android:name="in.swifiic.plat.helper.andi.HubAddressReceiver" >
             <intent-filter>
                 <action android:name="swifiic.suta.hubAddressUpdate" />

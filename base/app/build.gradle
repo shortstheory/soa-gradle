@@ -29,6 +29,6 @@ configurations {
 dependencies {
     compile 'com.android.support:support-v4:22.2.1'
     compile 'org.simpleframework:simple-xml:2.7.+'
-
-    compile files('libs/android-ibrdtn-api.jar')
+    compile 'de.tubs.ibr.dtn:library:1.1.1'
+//    compile files('libs/android-ibrdtn-api.jar')
 }

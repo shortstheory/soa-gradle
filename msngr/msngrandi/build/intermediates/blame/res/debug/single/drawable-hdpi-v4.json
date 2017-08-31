@@ -1,14 +1,6 @@
 [
     {
-        "merged": "/home/nic/android-dev/andiStudio/msngr0/msngrandi/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
-        "source": "/home/nic/android-dev/andiStudio/msngr0/msngrandi/build/intermediates/exploded-aar/msngr0/inswifiicandi/unspecified/res/drawable-hdpi-v4/ic_node.png"
-    },
-    {
-        "merged": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
-        "source": "/home/parivraajak/repo/app/msngr/andi1/msngrandi/build/intermediates/exploded-aar/andi1/inswifiicandi/unspecified/res/drawable-hdpi-v4/ic_node.png"
-    },
-    {
-        "merged": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
-        "source": "/home/parivraajak/soa-gradle/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/res/drawable-hdpi-v4/ic_node.png"
+        "merged": "/home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_node.png",
+        "source": "/home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/res/drawable-hdpi-v4/ic_node.png"
     }
 ]

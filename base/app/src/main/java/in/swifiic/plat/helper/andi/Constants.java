@@ -7,7 +7,7 @@ public final class Constants {
 	public static final String IBR_DTN_RECEIVE = "de.tubs.ibr.dtn.intent.RECEIVE"; // RECEIVE
 			
 	public static final String IBR_DTN_STATUS_REPORT = "de.tubs.ibr.dtn.intent.STATUS_REPORT"; // STATUS_REPORT
-	
+
 	
 	public static final String REPORT_DELIVERED_INTENT = "in.swifiic.app.REPORT_DELIVERED";
 	

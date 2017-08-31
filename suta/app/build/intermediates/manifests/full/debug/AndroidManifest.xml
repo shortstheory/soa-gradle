@@ -60,26 +60,6 @@
         </service>
         <service android:name="in.swifiic.plat.helper.andi.GenericService" />
 
-        <activity
-            android:name="in.swifiic.plat.app.suta.andi.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName="in.swifiic.plat.app.suta.andi.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="in.swifiic.plat.app.suta.andi.MainActivity" />
-        </activity>
-        <activity
-            android:name="in.swifiic.plat.helper.andi.ui.UserChooserActivity"
-            android:label="User List"
-            android:screenOrientation="portrait" />
-
-        <provider
-            android:name="in.swifiic.plat.app.suta.andi.provider.Provider"
-            android:authorities="in.swifiic.plat.app.suta.andi"
-            android:exported="true"
-            android:permission="in.swifiic.plat.app.suta.andi.USER" >
-        </provider>
-
         <receiver
             android:name="in.swifiic.plat.helper.andi.IBRDtnReceiver"
             android:enabled="true"
@@ -106,6 +86,27 @@
                 <action android:name="de.tubs.ibr.dtn.intent.STATUS_REPORT" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name="in.swifiic.plat.app.suta.andi.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="in.swifiic.plat.app.suta.andi.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.swifiic.plat.app.suta.andi.MainActivity" />
+        </activity>
+        <activity
+            android:name="in.swifiic.plat.helper.andi.ui.UserChooserActivity"
+            android:label="User List"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="in.swifiic.plat.app.suta.andi.provider.Provider"
+            android:authorities="in.swifiic.plat.app.suta.andi"
+            android:exported="true"
+            android:permission="in.swifiic.plat.app.suta.andi.USER" >
+        </provider>
+
         <receiver android:name="in.swifiic.plat.app.suta.andi.NewMessageReceiver" >
             <intent-filter>
                 <action android:name="in.swifiic.app.DATA_RECEIVED" />

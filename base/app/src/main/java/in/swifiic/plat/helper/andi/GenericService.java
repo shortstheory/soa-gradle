@@ -101,7 +101,7 @@ public class GenericService extends IntentService {
         try {
             // get the DTN session
             Session s = mClient.getSession();
-            
+
             // send the bundle
             BundleID ret = s.send(b, message.getBytes());
             

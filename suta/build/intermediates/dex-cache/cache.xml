@@ -3,12 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/home/nic/android-dev/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_54b8576903e016ecb6730894008531cc733a80be.jar" />
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_1ebdc9a8db7d5b8517a6f6530af45c7c19d604c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nic/android-dev/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_e7698b3588aad90dc2a1ace6904d38c695fb059e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -16,26 +25,26 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="4c5c4658af81e0316e930b401e4559c3e737bb62">
+        sha1="9427eb726f5b95d267ad20748e4cd0fe3f06cfa8">
         <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/suta-base-unspecified_e95225f662b608adb8634d7cd5b3d24f5668f55a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/suta/base/unspecified/jars/libs/android-ibrdtn-api.jar"
+        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/de.tubs.ibr.dtn/library/1.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="62b5ecab2badcd4201c9591477f66758b604c848">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/android-ibrdtn-api_b279b6da533ddf5cdab28e8121cdda1a2699d519.jar" />
+        sha1="181316627602c254e53be60fc85672913fb3fd91">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/de.tubs.ibr.dtn-library-1.1.1_f8b8f6e5d18675a4104ff5de166d9911ac6dc71e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_9d9722289f3cb9083349091bad306b770d711308.jar" />
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_221e561e6e8abc7fa11a77a46eb59aaa8893c529.jar" />
     </item>
     <item
         is-multidex="false"
@@ -45,15 +54,6 @@
         revision="25.0.2"
         sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
         <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/simple-xml-2.7.1_513d38d6521a7925bbc180fb42c163c34f425f0e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.1_b4400fd6f7807121cb982754f607ddb5b7751c52.jar" />
     </item>
 
 </items>

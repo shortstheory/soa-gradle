@@ -44,6 +44,7 @@ public class GenericService extends IntentService {
    
     // The communication with the DTN service is done using the DTNClient
     private DTNClient mClient = null;
+    private DTNClient.Session mSession = null;
     
     // Hold the last message as result
     private StringBuffer mLastMessage = new StringBuffer("");
@@ -99,23 +100,16 @@ public class GenericService extends IntentService {
        // String outId = mClient.getDTNService().getEndpoint()
               
         try {
-            // get the DTN session
-            Session s = mClient.getSession();
-
             // send the bundle
-            BundleID ret = s.send(b, message.getBytes());
+            BundleID ret = mSession.send(b, message.getBytes());
             
             if (ret == null) {
                 Log.e(TAG, "could not send the message");
             } else {
-                Log.d(TAG, "Bundle sent, BundleID: " + ret.toString() + "Bundle Source:" + mClient.getDTNService().getEndpoint());
+                Log.d(TAG, "Bundle sent, BundleID: " + ret.toString() + "Bundle Source:" + mClient.getEndpoint());
             }
         } catch (SessionDestroyedException e) {
             Log.e(TAG, "could not send the message", e);
-        } catch (InterruptedException e) {
-            Log.e(TAG, "could not send the message", e);
-        } catch (RemoteException e) {
-        	Log.e(TAG, "Sent but with remote exception in logs");
         }
     }
 
@@ -137,12 +131,10 @@ public class GenericService extends IntentService {
             try {
                 // We loop here until no more bundles are available
                 // (queryNext() returns false)
-                while (mClient.getSession().queryNext()){
+                while (mSession.queryNext()){
                 	Log.e(TAG, "Attempting to processs a BUNDLE !!!!!!");
                 }
             } catch (SessionDestroyedException e) {
-                Log.e(TAG, "Can not query for bundle", e);
-            } catch (InterruptedException e) {
                 Log.e(TAG, "Can not query for bundle", e);
             } catch (Exception e) {
                 Log.e(TAG, "Can not query for bundle:" + e.toString(), e );
@@ -152,7 +144,7 @@ public class GenericService extends IntentService {
             BundleID bundleid = intent.getParcelableExtra("bundleid");
             try {
                 // mark the bundle ID as delivered
-                mClient.getSession().delivered(bundleid);
+                mSession.delivered(bundleid);
             } catch (Exception e) {
                 Log.e(TAG, "Can not mark bundle as delivered.", e);
             }
@@ -198,12 +190,13 @@ public class GenericService extends IntentService {
         
     }
     
-    SessionConnection mSession = new SessionConnection() {
+    SessionConnection mSessionConnection = new SessionConnection() {
 
         @Override
         public void onSessionConnected(Session session) {
             Log.d(TAG, "Session connected");
-            session.setDataHandler(mDataHandler);
+            mSession = session;
+            mSession.setDataHandler(mDataHandler);
         }
 
         @Override
@@ -221,7 +214,7 @@ public class GenericService extends IntentService {
         
         // create a new DTN client
         if(null==mClient) {
-        	mClient = new DTNClient(mSession);
+        	mClient = new DTNClient(mSessionConnection);
         	String appName = this.getApplication().getPackageName();
         	
         	Registration registration = new Registration(appName);
@@ -234,7 +227,7 @@ public class GenericService extends IntentService {
                 mClient.initialize(this, registration);
                 Log.d(TAG,"Inside try loop");
                 Log.d(TAG, "Connection to DTN service established. GE = " + GE_TEST + " SE = " +appName);
-                List<Node> neighbours=mClient.getDTNService().getNeighbors();
+                List<Node> neighbours = mClient.getNeighbors();
             	Log.d(TAG,"Neighbours List "+neighbours.toString());
 		
             } catch (ServiceNotAvailableException e) {

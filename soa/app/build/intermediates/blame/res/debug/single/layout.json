@@ -4,6 +4,14 @@
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/layout/authenticate_user.xml"
     },
     {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/recharge_user.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/recharge_user.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/swifiic.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/swifiic.xml"
+    },
+    {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/layout/recharge.xml",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/layout/recharge.xml"
     },
@@ -32,15 +40,51 @@
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/layout/transaction_item.xml"
     },
     {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/user.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/user.xml"
+    },
+    {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/recharge.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/recharge.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/transaction_item.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/transaction_item.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/layout/user.xml",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/layout/user.xml"
     },
     {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/change_settings.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/change_settings.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/adduser.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/adduser.xml"
+    },
+    {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/layout/list_item.xml",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/authenticate_user.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/authenticate_user.xml"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/layout/transaction_list.xml",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/layout/transaction_list.xml"
     }
 ]

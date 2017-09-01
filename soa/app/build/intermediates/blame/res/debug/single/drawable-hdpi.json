@@ -8,12 +8,24 @@
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/icon_id_a.png"
     },
     {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/passport.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/passport.png"
+    },
+    {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/drawable-hdpi/userimg.png",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/userimg.png"
     },
     {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/error_2.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/error_2.png"
+    },
+    {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_delete.png",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/ic_delete.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/ic_launcher.png"
     },
     {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/drawable-hdpi/passport.png",
@@ -24,11 +36,31 @@
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/error.png"
     },
     {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_delete.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/ic_delete.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/error.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/error.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/icon_id_2.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/icon_id_2.png"
+    },
+    {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/drawable-hdpi/error_2.png",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/error_2.png"
     },
     {
         "merged": "/home/nic/android-dev/andiStudio/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
         "source": "/home/nic/android-dev/andiStudio/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/userimg.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/userimg.png"
+    },
+    {
+        "merged": "/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/merged/debug/drawable-hdpi/icon_id_a.png",
+        "source": "/home/nic/android-dev/andiStudio/soa/app/src/main/res/drawable-hdpi/icon_id_a.png"
     }
 ]

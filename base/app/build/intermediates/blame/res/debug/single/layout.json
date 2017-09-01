@@ -2,9 +2,5 @@
     {
         "merged": "/home/nic/android-dev/andiStudio/base/app/build/intermediates/res/merged/debug/layout/userlist_item_lib.xml",
         "source": "/home/nic/android-dev/andiStudio/base/app/src/main/res/layout/userlist_item_lib.xml"
-    },
-    {
-        "merged": "/home/nic/android-dev/base-andi/app/build/intermediates/res/merged/debug/layout/userlist_item_lib.xml",
-        "source": "/home/nic/android-dev/base-andi/app/src/main/res/layout/userlist_item_lib.xml"
     }
 ]

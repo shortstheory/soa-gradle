@@ -17,31 +17,32 @@ import java.util.Calendar;
 
 public class NewMessageReceiver extends BroadcastReceiver {
 
-	private static Context mcontext = null;
 	public NewMessageReceiver(){
 	}
 
 	private static final String TAG = "NewMessageReceiver";
 	int lastReceivedSeqNo;
-	public static SharedPreferences pref = null; 
+	//public static SharedPreferences pref = null;
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		if(null == NewMessageReceiver.pref) {
-			mcontext = context;
-			NewMessageReceiver.pref = PreferenceManager.getDefaultSharedPreferences(context);
-		}
+
+//		if(null == NewMessageReceiver.pref) {
+//			mcontext = context;
+//			NewMessageReceiver.pref = PreferenceManager.getDefaultSharedPreferences(context);
+//		}
+
 		if (intent.hasExtra("notification")) {
         	String payload = intent.getStringExtra("notification");
             Log.d(TAG, "Handling incoming messages: " + payload);
             Notification notif = Helper.parseNotification(payload);
-            handleNotification(notif);
+            handleNotification(context, notif);
         } else {
             Log.d(TAG, "Broadcast Receiver ignoring message - no notification found");
         }
 	}
 	
-	protected void handleNotification(Notification notif){
+	protected void handleNotification(Context context, Notification notif){
     	// TODO
     	// we need these arguments
 
@@ -58,11 +59,11 @@ public class NewMessageReceiver extends BroadcastReceiver {
     	// userList "username|alias;username|alias;..."
     	// appList  "appName|appId|appAlias|role1Alias:usrId:usrId:usrId|role2alias:...;
     	
-    	if(null == Provider.providerInstance){
+    	if(null == Provider.getProviderInstance()){
     		Log.e(TAG,"No Provider - whatsup...?");
     	} else {
     		if(notif.getNotificationName().equals("DeviceListUpdate")) {
-				WifiManager wimanager = (WifiManager) mcontext.getSystemService(Context.WIFI_SERVICE);
+				WifiManager wimanager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
 				String macAddress = wimanager.getConnectionInfo().getMacAddress();
 
 				Calendar c = Calendar.getInstance();
@@ -82,8 +83,8 @@ public class NewMessageReceiver extends BroadcastReceiver {
     				Log.d(TAG, "Got user list as: " + userList);
 					Log.d(TAG, "Got user accountDetails as: " + accountDetails);
 
-					Provider.providerInstance.loadUserSchema(userList);
-					Provider.providerInstance.storeAccountDetails(accountDetails, macAddress, notifSentByHubAt,notifRecievedBySutaAt);
+					Provider.getProviderInstance().loadUserSchema(userList);
+					Provider.getProviderInstance().storeAccountDetails(accountDetails, macAddress, notifSentByHubAt,notifRecievedBySutaAt);
 
 				}
     			else if(seqno > lastReceivedSeqNo){
@@ -92,8 +93,8 @@ public class NewMessageReceiver extends BroadcastReceiver {
     				Log.d(TAG, "Got user list as: " + userList);
 					Log.d(TAG, "Got user accountDetails as: " + accountDetails);
 
-					Provider.providerInstance.loadUserSchema(userList);
-					Provider.providerInstance.storeAccountDetails(accountDetails, macAddress, notifSentByHubAt,notifRecievedBySutaAt);
+					Provider.getProviderInstance().loadUserSchema(userList);
+					Provider.getProviderInstance().storeAccountDetails(accountDetails, macAddress, notifSentByHubAt,notifRecievedBySutaAt);
 
     		}
     			else

@@ -37,7 +37,7 @@ public class MainActivity extends SwifiicActivity  {
     private final long timeDiff = 1*(60*1000); // in milli seconds
 	private final String TAG="MainActivity";
     private AppEndpointContext aeCtx = new AppEndpointContext("suta", "0.1", "1");
-    public static SharedPreferences pref =null;
+
 
     private TextView remainingCredit,currTime,transactions;
 
@@ -46,7 +46,7 @@ public class MainActivity extends SwifiicActivity  {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        pref=PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences pref =PreferenceManager.getDefaultSharedPreferences(this);
         setContentView(R.layout.activity_main);
 
 
@@ -105,6 +105,8 @@ public class MainActivity extends SwifiicActivity  {
     }
     public void onResume()
     {
+        SharedPreferences pref =PreferenceManager.getDefaultSharedPreferences(this);
+
         remainingCredit.setText(pref.getString("remainingCredit", "waiting"));
         currTime.setText(pref.getString("notifSentByHubAt","waiting"));
         transactions.setText(pref.getString("revisedTransactionDetails","waiting"));
@@ -140,7 +142,8 @@ public class MainActivity extends SwifiicActivity  {
 	 */
 	public void sendInfoToHub()
 	{
-		Action act = new Action("SendInfo", aeCtx);
+        SharedPreferences pref =PreferenceManager.getDefaultSharedPreferences(this);
+        Action act = new Action("SendInfo", aeCtx);
         WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = manager.getConnectionInfo();
         String macAddress = info.getMacAddress();

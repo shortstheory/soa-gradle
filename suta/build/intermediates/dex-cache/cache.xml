@@ -12,20 +12,11 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/nic/android-dev/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_e7698b3588aad90dc2a1ace6904d38c695fb059e.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/exploded-aar/suta/base/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="9427eb726f5b95d267ad20748e4cd0fe3f06cfa8">
+        sha1="06423597c1266f441e9f3e8553a2f0f0054c60af">
         <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/suta-base-unspecified_e95225f662b608adb8634d7cd5b3d24f5668f55a.jar" />
     </item>
     <item
@@ -36,6 +27,15 @@
         revision="25.0.2"
         sha1="181316627602c254e53be60fc85672913fb3fd91">
         <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/de.tubs.ibr.dtn-library-1.1.1_f8b8f6e5d18675a4104ff5de166d9911ac6dc71e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nic/android-dev/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_e7698b3588aad90dc2a1ace6904d38c695fb059e.jar" />
     </item>
     <item
         is-multidex="false"

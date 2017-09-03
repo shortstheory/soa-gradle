@@ -101,6 +101,15 @@ public class GenericService extends IntentService {
               
         try {
             // send the bundle
+            if(null == mSession ){
+                // explore if session connects in 100 milliseconds
+                Thread.currentThread().sleep(100,0);
+            }
+            if(null==mSession){
+                Log.e(TAG, "Session not connected - not sending the message");
+                // TODO - add interface through binding to know if the message was sent
+                return;
+            }
             BundleID ret = mSession.send(b, message.getBytes());
             
             if (ret == null) {
@@ -110,6 +119,9 @@ public class GenericService extends IntentService {
             }
         } catch (SessionDestroyedException e) {
             Log.e(TAG, "could not send the message", e);
+        } catch (Exception e) {
+
+            Log.e(TAG, "Send Message b=" + b + "  message=" + message +" excp="+ e + " mSession=" + mSession);
         }
     }
 
@@ -170,7 +182,7 @@ public class GenericService extends IntentService {
                 sendToHub(msg, hubAddress);
 			} catch (Exception e) {
 				e.printStackTrace();
-				Log.e(TAG, "Parse failed during send message for String: " + msg);
+				Log.e(TAG, "Parse failed during send message for String: " + msg + "\n exception:" + e) ;
 			}
         }
         else if (Constants.SEND_INFO_INTENT.equals(action)) {
@@ -184,7 +196,7 @@ public class GenericService extends IntentService {
             sendToHub(msg, hubAddress);
 			} catch (Exception e) {
 				e.printStackTrace();
-				Log.e(TAG, "Parse failed during send message for String: " + msg);
+				Log.e(TAG, "Parse failed during send info for String: " + msg+ "\n exception:" + e);
 			}
         }
         
@@ -201,6 +213,7 @@ public class GenericService extends IntentService {
 
         @Override
         public void onSessionDisconnected() {
+            mSession = null;
             Log.d(TAG, "Session disconnected");
         }
         

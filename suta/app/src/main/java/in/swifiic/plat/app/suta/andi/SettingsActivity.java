@@ -98,7 +98,7 @@ public class SettingsActivity extends PreferenceActivity {
 			alertDialog.setMessage("Are you sure that you want to change the hub address");
 			alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,int which) {
-					Provider.providerInstance.deletedB();	
+					Provider.getProviderInstance().deletedB();
 					sharedPref.edit().putString("reset_required", "yes").commit();
 					if(PrefChangeLstnr.this.preferenceRef.getKey().equals("hub_address"))
 					sharedPref.edit().putString("hub_address", stringValue).commit();

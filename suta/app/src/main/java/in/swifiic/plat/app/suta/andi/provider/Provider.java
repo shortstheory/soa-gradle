@@ -54,7 +54,7 @@ public class Provider extends ContentProvider {
 	private static final String AUTHORITY = "in.swifiic.plat.app.suta.andi";
 	private static final String USER_BASE_PATH = "users";
 	private static final int USERS = 10;
-	public static Provider providerInstance = null;
+	private static Provider providerInstance = null;
 	private DatabaseHelper dbHelper = null;
 
     //---for database use---
@@ -141,6 +141,13 @@ public class Provider extends ContentProvider {
 	}
 
 
+	public static Provider getProviderInstance() {
+		if(null == providerInstance) {
+			providerInstance = new Provider();
+			providerInstance.onCreate();
+		}
+		return providerInstance;
+	}
 	@Override
 	public boolean onCreate() {
 	    Context context = getContext();

@@ -44,11 +44,6 @@ import android.util.Log;
 // <appName> is variable
 
 public class Provider extends ContentProvider {
-
-	private static Context mContext;
-
-
-
 	private static final String TAG = "Provider";
 
 	private static final String AUTHORITY = "in.swifiic.plat.app.suta.andi";
@@ -150,11 +145,9 @@ public class Provider extends ContentProvider {
 	}
 	@Override
 	public boolean onCreate() {
-	    Context context = getContext();
-        dbHelper = new DatabaseHelper(context);
+        dbHelper = new DatabaseHelper(getContext());
         sutaDB = dbHelper.getWritableDatabase();
         providerInstance = this;
-		mContext = context;
         return (sutaDB == null)? false: true;
 	}
 
@@ -211,7 +204,7 @@ public class Provider extends ContentProvider {
 	// transactionDetails = Details,Ammount:Details,Ammount:
 	// revisedTransactionDetails = Details	Amount\nDetails	Amount
 	public void storeAccountDetails(String accountdetails,String macAddress,String notifSentByHubAt,String notifRecievedBySutaAt){
-		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(mContext);
+		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getContext());
 		SharedPreferences.Editor editor = pref.edit();
 
 

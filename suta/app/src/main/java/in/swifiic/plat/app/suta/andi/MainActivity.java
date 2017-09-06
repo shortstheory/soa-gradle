@@ -103,7 +103,7 @@ public class MainActivity extends SwifiicActivity  {
         this.startService(serviceIntent);
 		
     }
-    public void onResume()
+    public void onResume() //why do we change all the strings to waiting onresume?
     {
         SharedPreferences pref =PreferenceManager.getDefaultSharedPreferences(this);
 
@@ -162,7 +162,7 @@ public class MainActivity extends SwifiicActivity  {
         act.addArgument("timeAtSutaOfLastHubUpdate",timeAtSutaOfLastHubUpdate);
 
 
-         String hubAddress = pref.getString("hub_address", "");
+        String hubAddress = pref.getString("hub_address", "");
       
         if(null!=hubAddress)
         Helper.sendSutaInfo(act, hubAddress + "/suta", this);

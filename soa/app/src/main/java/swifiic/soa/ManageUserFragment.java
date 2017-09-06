@@ -525,9 +525,8 @@ private class RechargeUserTask extends AsyncTask<String,Void,Void>{
 	@Override
 	protected Void doInBackground(String... params) {
 		String url = null;
-		HttpResponse response = null;
+//		HttpResponse response = null;
 	try {
-
 	    if (settings.contains(URL)) {
 			url = settings.getString(URL,null);
 		} else {
@@ -549,7 +548,7 @@ private class RechargeUserTask extends AsyncTask<String,Void,Void>{
 	    nameValuePairs.add(new BasicNameValuePair(Constants.EventNotes_tag,event+" from SOA app"));
 	    nameValuePairs.add(new BasicNameValuePair(Constants.Details_tag,event));
 
-		java.net.URL targetUrl = new URL("http://" + URL + "/HubSrvr/Oprtr");
+		java.net.URL targetUrl = new URL("http://" + url + "/HubSrvr/Oprtr");
 		HttpURLConnection conn = (HttpURLConnection) targetUrl.openConnection();
 		conn.setDoOutput(true);
 		conn.setRequestMethod("POST");
@@ -570,29 +569,26 @@ private class RechargeUserTask extends AsyncTask<String,Void,Void>{
 
 		}
         
-     int responseCode = conn.getResponseCode();
-       Log.v("ERROR", "Response Code => " + responseCode);
-       String s = null;
-      
-      if (responseCode==HttpURLConnection.HTTP_OK){
-          String msg = null; 
+		int responseCode = conn.getResponseCode();
+		Log.v("ERROR", "Response Code => " + responseCode);
+		String s = null;
 
-    	  msg = getResources().getString(R.string.CreditSuccess);
-    	  getActivity().runOnUiThread(new ToastThread(msg+" for "+userId));
-    //    Toast.makeText(context.getActivity(),"Response Body => " + responseBody,Toast.LENGTH_LONG).show();
-      } else if (responseCode==HttpURLConnection.HTTP_UNAUTHORIZED){
-    		 MainActivity act = (MainActivity)getActivity();
-       	     getActivity().runOnUiThread(act.new ForceLogoutThread(getResources().getString(R.string.SessionExpired)));
-      }
-      else {
-    	  msg = getResources().getString(R.string.CreditUnsuccess);
-    	  getActivity().runOnUiThread(new ToastThread(msg));
-      }
-    }catch(HttpHostConnectException e){
-		 getActivity().runOnUiThread(new ToastThread(getResources().getString(R.string.HostConnRefused))); 
-	}
-	catch(Exception e){
-		getActivity().runOnUiThread(new ToastThread("Exceptionin RechargeUser Task: "+e)); 
+		if (responseCode==HttpURLConnection.HTTP_OK) {
+			String msg = null;
+
+			msg = getResources().getString(R.string.CreditSuccess);
+			getActivity().runOnUiThread(new ToastThread(msg+" for "+userId));
+			//    Toast.makeText(context.getActivity(),"Response Body => " + responseBody,Toast.LENGTH_LONG).show();
+		} else if (responseCode==HttpURLConnection.HTTP_UNAUTHORIZED){
+		MainActivity act = (MainActivity)getActivity();
+		getActivity().runOnUiThread(act.new ForceLogoutThread(getResources().getString(R.string.SessionExpired)));
+		} else {
+			msg = getResources().getString(R.string.CreditUnsuccess);
+			getActivity().runOnUiThread(new ToastThread(msg));
+		}
+    } catch(Exception e) {
+		getActivity().runOnUiThread(new ToastThread("Exceptionin RechargeUser Task: "+e));
+		Log.e("SOA", "Exeception!", e);
 	}
 	return null;
 	}

@@ -240,9 +240,6 @@ public class GenericService extends IntentService {
                 mClient.initialize(this, registration);
                 Log.d(TAG,"Inside try loop");
                 Log.d(TAG, "Connection to DTN service established. GE = " + GE_TEST + " SE = " +appName);
-                List<Node> neighbours = mClient.getNeighbors();
-            	Log.d(TAG,"Neighbours List "+neighbours.toString());
-		
             } catch (ServiceNotAvailableException e) {
                 // The DTN service has not been found
                 Log.e(TAG, "DTN service unavailable. Is IBR-DTN installed?", e);
@@ -250,7 +247,7 @@ public class GenericService extends IntentService {
                 // The service has not been found
                 Log.e(TAG, "The app has no permission to access the DTN service. It is important to install the DTN service first and then the app.", e);
             } catch(Exception e) {
-                Log.e(TAG,"Cant Fetch neighbours list");
+                Log.e(TAG,"Cant Fetch neighbours list",e);
             }
         }
     }

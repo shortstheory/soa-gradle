@@ -1,4 +1,4 @@
-#Sat Sep 02 13:08:56 IST 2017
+#Wed Sep 06 18:35:43 IST 2017
 base.0=/home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

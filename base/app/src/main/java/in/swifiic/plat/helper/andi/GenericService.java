@@ -249,11 +249,8 @@ public class GenericService extends IntentService {
             } catch (SecurityException e) {
                 // The service has not been found
                 Log.e(TAG, "The app has no permission to access the DTN service. It is important to install the DTN service first and then the app.", e);
-            }
-            catch(Exception e)
-            {
-
-            Log.e(TAG,"Cant Fetch neighbours list");
+            } catch(Exception e) {
+                Log.e(TAG,"Cant Fetch neighbours list");
             }
         }
     }

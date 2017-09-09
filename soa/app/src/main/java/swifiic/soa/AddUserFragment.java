@@ -171,9 +171,11 @@ public class AddUserFragment extends Fragment implements OnClickListener,OnFocus
 				boolean fieldInvalid = false;
 				if (!errorInLogin && !(fieldInvalid = fieldsCheck())) {
 					new AddEditUserTask(this).execute();
-				} else if (fieldInvalid)
+				} else if (fieldInvalid) {
 					Toast.makeText(getActivity(), "Check the fields", Toast.LENGTH_SHORT).show();
-				else Toast.makeText(getActivity(), "Error in Login", Toast.LENGTH_SHORT).show();
+				} else {
+					Toast.makeText(getActivity(), "Error in Login", Toast.LENGTH_SHORT).show();
+				}
 				break;
 			case R.id.imageButton1: // for profile Pic
 				ivToSet = ivProfile;

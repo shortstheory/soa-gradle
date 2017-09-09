@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Sep 06 18:38:15 IST 2017
+#Thu Sep 07 21:43:14 IST 2017
 8.set=ANDROID_RESOURCE
 1.base=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/resources-debug.ap_
 1.file=/home/nic/android-dev/andiStudio/suta/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/icon.png

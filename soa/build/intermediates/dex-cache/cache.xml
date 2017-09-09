@@ -75,21 +75,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/nic/android-dev/android-studio/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/home/nic/android-dev/andiStudio/soa/app/build/intermediates/pre-dexed/debug/commons-io-2.4_8cfbdb580eda8a1ce190f9488256b559ebe3a422.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/nic/android-dev/andiStudio/soa/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
         <dex dex="/home/nic/android-dev/andiStudio/soa/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_e7dd4cfd2d11d03f403a6d87fb75912cb4b6817c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nic/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
-        <dex dex="/home/nic/android-dev/andiStudio/soa/app/build/intermediates/pre-dexed/debug/commons-io-2.5_d385e45d7c1113ab802718ebeb6c78c036d4f597.jar" />
     </item>
     <item
         is-multidex="false"

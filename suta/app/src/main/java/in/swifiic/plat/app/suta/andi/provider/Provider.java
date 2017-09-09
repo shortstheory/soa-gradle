@@ -163,7 +163,9 @@ public class Provider extends ContentProvider {
 		ContentValues v = new ContentValues();
 		int i = 1;
 		StringTokenizer st = new StringTokenizer(userSchema, ";");
-		while(st.hasMoreTokens()) {
+		Log.d(TAG, "USER SCHEMA: " + userSchema);
+		Log.d(TAG, "USER SCHEMA TOKENS: " + st);
+		while(st.hasMoreTokens()) { //check this block
 			userInfo = st.nextToken();
 			StringTokenizer st2 = new StringTokenizer(userInfo, "|");
 		     while(st2.hasMoreTokens()) {

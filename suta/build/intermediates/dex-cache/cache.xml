@@ -16,7 +16,7 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="50b22bad33f8293e69756b1be29a82e607654954">
+        sha1="c53c5c1ebd2ef5a59759fd22c0c24466b39b326a">
         <dex dex="/home/nic/android-dev/andiStudio/suta/app/build/intermediates/pre-dexed/debug/suta-base-unspecified_e95225f662b608adb8634d7cd5b3d24f5668f55a.jar" />
     </item>
     <item

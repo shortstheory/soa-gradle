@@ -170,7 +170,9 @@ public class AddUserFragment extends Fragment implements OnClickListener,OnFocus
 			case R.id.imageButtonCommit:
 				boolean fieldInvalid = false;
 				if (!errorInLogin && !(fieldInvalid = fieldsCheck())) {
-					new AddEditUserTask(this).execute();
+					new AddEditUserTask(this).execute(etName.getText().toString(), etAlias.getText().toString(),
+														etEmail.getText().toString(), etAddr.getText().toString(),
+														etMobileNo.getText().toString(), etNotes.getText().toString());
 				} else if (fieldInvalid) {
 					Toast.makeText(getActivity(), "Check the fields", Toast.LENGTH_SHORT).show();
 				} else {
@@ -305,7 +307,7 @@ public class AddUserFragment extends Fragment implements OnClickListener,OnFocus
  * If the 'userId' is already set , edit user is triggered ,otherwise insert user
  */
 
-	private class AddEditUserTask extends AsyncTask<Void, Void, Void> { // <doInBackground, onProgressUpdate, onPostExecute>
+	private class AddEditUserTask extends AsyncTask<String, Void, Void> { // <doInBackground, onProgressUpdate, onPostExecute>
 
 		private final AddUserFragment context;
 		private boolean isAdded = false;
@@ -317,7 +319,7 @@ public class AddUserFragment extends Fragment implements OnClickListener,OnFocus
 		}
 
 		@Override
-		protected Void doInBackground(Void... params) {
+		protected Void doInBackground(String... params) {
 			String url = null;
 			//getActivity().runOnUiThread(new ToastThread("In doInBckgrnd of AsyncTask"));
 			Log.d("myNewTag", "started-editing");
@@ -326,12 +328,13 @@ public class AddUserFragment extends Fragment implements OnClickListener,OnFocus
 				if (settings.contains(URL)) url = settings.getString(URL, null);
 				else throw new Exception("URL not set in settings!!");
 
-				String name = etName.getText().toString();
-				String alias = etAlias.getText().toString();
-				String email = etEmail.getText().toString();
-				String addr = etAddr.getText().toString();
-				String mobile = etMobileNo.getText().toString();
-				String notes = etNotes.getText().toString();
+				String name = params[0];
+				String alias = params[1];
+				String email = params[2];
+				String addr = params[3];
+				String mobile = params[4];
+				String notes = params[5];
+//				Log.d("TAG", name + alias + email + addr + mobile + notes);
 				Bitmap customerPic, idProof, addrProof, miniPic;
 				customerPic = scaleBitmap(((BitmapDrawable) ivProfile.getDrawable()).getBitmap(), MAX_SIZE);
 				idProof = scaleBitmap(((BitmapDrawable) ivIdProof.getDrawable()).getBitmap(), MAX_SIZE);
@@ -492,6 +495,10 @@ public class AddUserFragment extends Fragment implements OnClickListener,OnFocus
 		}
 		if (!etMobileNo.getText().toString().trim().matches(PHONE_REGEX)) {
 			etMobileNo.setError("Invalid Mobile No.");
+			isError = true;
+		}
+		if (!etAlias.getText().toString().trim().matches(NAME_REGEX)) { //should be changed to a more specific regex later
+			etAlias.setError("5-15 chars");
 			isError = true;
 		}
 		return isError;

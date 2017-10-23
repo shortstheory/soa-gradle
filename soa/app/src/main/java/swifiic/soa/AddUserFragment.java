@@ -417,8 +417,6 @@ public class AddUserFragment extends Fragment implements OnClickListener,OnFocus
 					else msg = getResources().getString(R.string.AdditionUnsuccess);
 					getActivity().runOnUiThread(new ToastThread(msg));
 				}
-			} catch (HttpHostConnectException e) {
-				getActivity().runOnUiThread(new ToastThread(getResources().getString(R.string.HostConnRefused)));
 			} catch (Exception e) {
 				getActivity().runOnUiThread(new ToastThread("Exception in addEditUser :" + e));
 			}

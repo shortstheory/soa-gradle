@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Sep 09 14:28:32 IST 2017
+#Mon Oct 16 11:23:15 IST 2017
 20.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 143.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 439.set=JAVA_RESOURCE
@@ -15,7 +15,7 @@
 236.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Ouagadougou
 8.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 407.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Enderbury
-118.set=ANDROID_RESOURCE
+118.set=JAVA_RESOURCE
 0.set=JAVA_RESOURCE
 191.set=ANDROID_RESOURCE
 269.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Helsinki
@@ -41,7 +41,7 @@
 260.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 431.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 293.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-140.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Ceuta
+140.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/ic_launcher.png
 123.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 149.set=JAVA_RESOURCE
 156.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -62,7 +62,7 @@
 126.set=ANDROID_RESOURCE
 283.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 454.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-130.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Kolkata
+130.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Amsterdam
 301.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Antarctica/Davis
 14.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 424.set=JAVA_RESOURCE
@@ -82,7 +82,7 @@
 290.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Marquesas
 444.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 356.set=JAVA_RESOURCE
-120.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Harare
+120.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Nairobi
 153.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Dominica
 279.set=JAVA_RESOURCE
 324.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Irkutsk
@@ -99,7 +99,7 @@
 280.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/format/messages_fr.properties
 451.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Bucharest
 256.set=JAVA_RESOURCE
-134.set=JAVA_RESOURCE
+134.set=ANDROID_RESOURCE
 117.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 11.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Indian/Mahe
 467.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -150,7 +150,7 @@
 257.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 428.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
 104.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/ic_dollar.jpeg
-137.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+6
+137.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+5
 308.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Jamaica
 47.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/St_Vincent
 372.set=JAVA_RESOURCE
@@ -165,7 +165,7 @@
 418.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 471.set=JAVA_RESOURCE
 297.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Rainy_River
-127.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/swifiic.xml
+127.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Stockholm
 272.set=JAVA_RESOURCE
 161.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 150.set=JAVA_RESOURCE
@@ -243,7 +243,7 @@
 436.set=JAVA_RESOURCE
 63.set=JAVA_RESOURCE
 314.set=JAVA_RESOURCE
-135.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
+135.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 306.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 332.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Araguaina
 45.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -263,7 +263,7 @@
 433.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 295.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 214.set=JAVA_RESOURCE
-125.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
+125.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
 142.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+9
 169.set=JAVA_RESOURCE
 158.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
@@ -283,7 +283,7 @@
 146.set=JAVA_RESOURCE
 285.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 456.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-132.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Sofia
+132.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Nipigon
 303.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Pohnpei
 16.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 444.set=JAVA_RESOURCE
@@ -304,7 +304,7 @@
 275.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 446.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 376.set=ANDROID_RESOURCE
-122.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Damascus
+122.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+4
 155.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Wake
 299.set=JAVA_RESOURCE
 309.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -376,8 +376,8 @@
 259.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 106.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Indiana/Vincennes
 184.set=JAVA_RESOURCE
-139.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Indiana/Knox
-140.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
+139.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Ceuta
+140.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
 49.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Cairo
 409.set=JAVA_RESOURCE
 392.set=JAVA_RESOURCE
@@ -392,7 +392,7 @@
 404.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Australia/Melbourne
 266.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/El_Salvador
 299.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/North_Dakota/Beulah
-129.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Guam
+129.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Kolkata
 13.set=JAVA_RESOURCE
 130.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 301.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -445,7 +445,7 @@
 249.set=JAVA_RESOURCE
 321.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Sao_Paulo
 34.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-127.set=ANDROID_RESOURCE
+127.set=JAVA_RESOURCE
 183.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Danmarkshavn
 337.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 199.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -483,7 +483,7 @@
 257.set=JAVA_RESOURCE
 196.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Lima
 367.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Hermosillo
-135.set=ANDROID_RESOURCE
+135.set=JAVA_RESOURCE
 231.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 433.set=JAVA_RESOURCE
 402.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -495,7 +495,7 @@
 461.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout/authenticate_user.xml
 297.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 234.set=JAVA_RESOURCE
-127.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
+127.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 21.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/folders/2/1f/main/gradle/wrapper/gradle-wrapper.properties
 144.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+7
 112.set=JAVA_RESOURCE
@@ -515,7 +515,7 @@
 101.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Guatemala
 287.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 458.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-134.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Zurich
+134.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout/recharge_user.xml
 305.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Vientiane
 464.set=JAVA_RESOURCE
 44.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/menu/main.xml
@@ -536,7 +536,7 @@
 277.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 448.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 396.set=JAVA_RESOURCE
-124.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Antarctica/Mawson
+124.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+3
 157.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT-13
 328.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Dubai
 242.set=JAVA_RESOURCE
@@ -583,7 +583,7 @@
 435.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Caracas
 381.set=JAVA_RESOURCE
 25.set=JAVA_RESOURCE
-118.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_launcher.png
+118.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Indian/Chagos
 468.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Hovd
 28.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Argentina/Salta
 332.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -743,7 +743,7 @@
 427.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 103.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Rarotonga
 289.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-136.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Brazzaville
+136.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+6
 307.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Almaty
 46.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Tongatapu
 169.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT-6
@@ -762,12 +762,12 @@
 461.set=ANDROID_RESOURCE
 279.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 296.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Chisinau
-126.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout/list_item.xml
+126.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/swifiic.xml
 159.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT-12
 262.set=JAVA_RESOURCE
 160.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 69.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Paris
-140.set=JAVA_RESOURCE
+140.set=ANDROID_RESOURCE
 70.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 185.set=JAVA_RESOURCE
 390.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Argentina/Ushuaia
@@ -843,7 +843,7 @@
 426.set=JAVA_RESOURCE
 53.set=JAVA_RESOURCE
 304.set=JAVA_RESOURCE
-134.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
+134.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
 305.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 331.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Pangnirtung
 44.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
@@ -882,7 +882,7 @@
 136.set=JAVA_RESOURCE
 284.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 455.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-131.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Amsterdam
+131.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Sofia
 302.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Nauru
 15.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 434.set=JAVA_RESOURCE
@@ -902,7 +902,7 @@
 291.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Vaduz
 445.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 366.set=JAVA_RESOURCE
-121.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Nairobi
+121.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Damascus
 154.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Ndjamena
 289.set=JAVA_RESOURCE
 325.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout/adduser.xml
@@ -921,7 +921,7 @@
 435.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 266.set=JAVA_RESOURCE
 144.set=JAVA_RESOURCE
-118.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
+118.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 12.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/UCT
 468.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 315.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Kuching
@@ -969,7 +969,7 @@
 429.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 105.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Australia/Brisbane
 174.set=JAVA_RESOURCE
-138.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+5
+138.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Indiana/Knox
 48.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Barbados
 382.set=JAVA_RESOURCE
 26.set=JAVA_RESOURCE
@@ -981,7 +981,7 @@
 265.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Tashkent
 419.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 298.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Indian/Maldives
-128.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Stockholm
+128.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Guam
 300.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 282.set=JAVA_RESOURCE
 162.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
@@ -1076,7 +1076,7 @@
 247.set=JAVA_RESOURCE
 195.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Kabul
 366.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Pacific/Pitcairn
-125.set=JAVA_RESOURCE
+125.set=ANDROID_RESOURCE
 79.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 399.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Metlakatla
 229.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT
@@ -1115,7 +1115,7 @@
 100.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Grenada
 286.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 457.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-133.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Nipigon
+133.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Zurich
 304.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Europe/Volgograd
 454.set=JAVA_RESOURCE
 166.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT-14
@@ -1136,7 +1136,7 @@
 276.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 447.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 386.set=JAVA_RESOURCE
-123.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+4
+123.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Antarctica/Mawson
 156.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Montreal
 327.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout/transaction_list.xml
 232.set=JAVA_RESOURCE
@@ -1332,7 +1332,7 @@ count=473
 102.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Hong_Kong
 288.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 459.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-135.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout/recharge_user.xml
+135.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Brazzaville
 306.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Gaborone
 45.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Lome
 168.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Asia/Aqtau
@@ -1352,7 +1352,7 @@ count=473
 295.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/EST
 278.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_
 449.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
-125.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Etc/GMT+3
+125.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/layout/list_item.xml
 158.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/ic_delete.png
 329.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Merida
 252.set=JAVA_RESOURCE
@@ -1399,7 +1399,7 @@ count=473
 408.set=JAVA_RESOURCE
 391.set=JAVA_RESOURCE
 35.set=JAVA_RESOURCE
-119.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Indian/Chagos
+119.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/Africa/Harare
 469.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Argentina/Jujuy
 470.base=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 29.file=/home/nic/android-dev/andiStudio/soa/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar/org/joda/time/tz/data/America/Boa_Vista

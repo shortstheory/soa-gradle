@@ -13,4 +13,17 @@
     tools:context="com.arnavdhamija.bromide.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:text="@string/main_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bromide_button" />
+    </LinearLayout>
 </RelativeLayout>

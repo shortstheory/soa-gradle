@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
+import android.renderscript.ScriptGroup;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,38 +70,57 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == PICK_IMAGE) {
             if (resultCode == Activity.RESULT_OK) {
                 Uri result = data.getData();
-//                String path = getRealPathFromURI(result);
                 Log.d("BROMIDE", result.toString());
                 ImageView displayImage = (ImageView) findViewById(R.id.displayImage);
                 displayImage.setImageURI(result);
-//                Log.d("BROMIDE", "FP: " + path);
+
+                ImageEncoder imageEncoder = new ImageEncoder(result);
+                try {
+                    String encodedString = imageEncoder.base64encode();
+                    Log.d("ENCODE", encodedString);
+                } catch (InterruptedException e) {
+
+                }
             }
         }
     }
 
-    private String convertToBase64(String imagePath)
-    {
-        Bitmap bm = BitmapFactory.decodeFile(imagePath);
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bm.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-        byte[] byteArrayImage = baos.toByteArray();
-        String encodedImage = Base64.encodeToString(byteArrayImage, Base64.DEFAULT);
-        return encodedImage;
-    }
+    class ImageEncoder implements Runnable {
+        private Thread thread;
+        Uri imageURI;
+        String resultString;
 
-
-
-    private String getRealPathFromURI(Uri contentURI) {
-        String result;
-        Cursor cursor = getContentResolver().query(contentURI, null, null, null, null);
-        if (cursor == null) { // Source is Dropbox or other similar local file path
-            result = contentURI.getPath();
-        } else {
-            cursor.moveToFirst();
-            int idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
-            result = cursor.getString(idx);
-            cursor.close();
+        ImageEncoder(Uri uri) {
+            imageURI = uri;
         }
-        return result;
+
+        @Override
+        public void run() {
+            resultString = encodeImage(imageURI);
+        }
+
+        public String base64encode() throws InterruptedException {
+            thread = new Thread(this);
+            thread.start();
+            thread.join();
+            return resultString;
+        }
+
+        private String encodeImage(Uri uri) {
+            try {
+                InputStream imageStream = getContentResolver().openInputStream(uri);
+                final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
+
+                ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                selectedImage.compress(Bitmap.CompressFormat.JPEG,100,baos);
+                byte[] b = baos.toByteArray();
+                String encImage = Base64.encodeToString(b, Base64.DEFAULT);
+                return encImage;
+            } catch (IOException e) {
+                Log.e("BROMIDE", "File not found");
+            }
+            return null;
+        }
     }
+
 }

@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/assets"><file name="default.jpeg" path="/home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/assets/default.jpeg"/></source><source path="/home/nic/android-dev/andiStudio/Bromide/inswifiicandi/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/release/assets"/></dataSet></merger>

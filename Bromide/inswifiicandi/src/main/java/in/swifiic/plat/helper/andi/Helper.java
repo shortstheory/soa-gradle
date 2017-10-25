@@ -47,12 +47,12 @@ public class Helper {
         }
         return null;
 	}
-	public static String sendAction(Action act, String hubAddress, Context c) {
+	public static String sendAction(Action act, String hubAddress, Context c) { // 2ASK: we're all adding fromUser here!
         try {
         	// Loading my identity from preferences
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(c);
             String myIdentity = sharedPref.getString("my_identity", "");
-        	act.addArgument("fromUser", myIdentity);
+//        	act.addArgument("fromUser", myIdentity);
         	
         	String msg = serializeAction(act);
             

@@ -28,7 +28,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity {
+import in.swifiic.plat.helper.andi.ui.SwifiicActivity;
+
+public class MainActivity extends SwifiicActivity {
 
     final static int PICK_IMAGE = 1;
     String encodedString = null;
@@ -42,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         Button bromideButton = (Button) findViewById(R.id.bromide_button);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
-        setSupportActionBar(toolbar);
-
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         final String hubAddress = sharedPreferences.getString("hub_address", "");

@@ -41,9 +41,12 @@ class ImageEncoder implements Runnable {
             InputStream imageStream = context.getContentResolver().openInputStream(uri);
             final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            selectedImage.compress(Bitmap.CompressFormat.JPEG,100,baos); //32KB
+            selectedImage.compress(Bitmap.CompressFormat.JPEG, 100, baos); //32KB
             byte[] b = baos.toByteArray();
             String encImage = Base64.encodeToString(b, Base64.DEFAULT);
+
+            ImageSender imageSender = new ImageSender(context);
+            imageSender.sendImage(encImage);
         } catch (IOException e) {
             Log.e("BROMIDE", "File not found");
         }

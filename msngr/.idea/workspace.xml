@@ -38,26 +38,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ChatSummary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/ChatSummary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
               <caret line="44" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,7 +51,7 @@
       <file leaf-file-name="NewMessageReceiver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/NewMessageReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="817">
               <caret line="43" column="46" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -74,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1653">
-              <caret line="0" column="33" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="33" />
+            <state relative-caret-position="646">
+              <caret line="72" column="31" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +75,7 @@
       <file leaf-file-name="Helper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inswifiicandi/src/main/java/in/swifiic/plat/helper/andi/Helper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="665">
               <caret line="54" column="50" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="50" />
               <folding />
             </state>
@@ -106,13 +92,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inswifiicandi/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-106">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -127,6 +113,16 @@
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Msg.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/Msg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -2595,9 +2591,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2866,7 +2863,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3281,9 +3277,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3291,9 +3285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3339,9 +3330,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3487,9 +3476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3500,7 +3486,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3554,23 +3539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/Msg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/MyDialogPreference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3578,9 +3550,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3588,9 +3558,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="44" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3636,18 +3604,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/NewMessageReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="817">
           <caret line="43" column="46" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1653">
-          <caret line="0" column="33" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3656,7 +3614,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inswifiicandi/src/main/java/in/swifiic/plat/helper/andi/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="665">
           <caret line="54" column="50" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="50" />
           <folding />
         </state>
@@ -3675,9 +3633,27 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/Msg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msngrandi/src/main/java/in/swifiic/app/msngr/andi/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="72" column="31" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

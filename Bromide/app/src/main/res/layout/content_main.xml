@@ -19,7 +19,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp">
 
         <Button
             android:text="@string/main_button_text"
@@ -32,8 +33,10 @@
             android:layout_width="match_parent"
             app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/displayImage"
-            android:layout_height="250dp"
-            android:layout_margin="20dp" />
+            android:layout_margin="20dp"
+            android:maxHeight="206dp"
+            android:minHeight="0dp"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -20,6 +20,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -28,6 +31,8 @@ import java.io.InputStream;
 public class MainActivity extends AppCompatActivity {
 
     final static int PICK_IMAGE = 1;
+    String encodedString = null;
+    boolean payloadReady = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         bromideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("BROMIDE", "HUB_ADDR"+hubAddress);
+                Log.d("BROMIDE", "HUB_ADDR" + hubAddress);
 
                 Intent intent = new Intent();
                 intent.setType("image/*");
@@ -61,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "TBD", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                if (payloadReady) {
+
+                }
             }
         });
     }
@@ -74,53 +82,13 @@ public class MainActivity extends AppCompatActivity {
                 ImageView displayImage = (ImageView) findViewById(R.id.displayImage);
                 displayImage.setImageURI(result);
 
-                ImageEncoder imageEncoder = new ImageEncoder(result);
+                ImageEncoder imageEncoder = new ImageEncoder(getApplicationContext(), result);
                 try {
-                    String encodedString = imageEncoder.base64encode();
-                    Log.d("ENCODE", encodedString);
+                    imageEncoder.base64encode();
+                    payloadReady = true;
                 } catch (InterruptedException e) {
-
                 }
             }
         }
     }
-
-    class ImageEncoder implements Runnable {
-        private Thread thread;
-        Uri imageURI;
-        String resultString;
-
-        ImageEncoder(Uri uri) {
-            imageURI = uri;
-        }
-
-        @Override
-        public void run() {
-            resultString = encodeImage(imageURI);
-        }
-
-        public String base64encode() throws InterruptedException {
-            thread = new Thread(this);
-            thread.start();
-            thread.join();
-            return resultString;
-        }
-
-        private String encodeImage(Uri uri) {
-            try {
-                InputStream imageStream = getContentResolver().openInputStream(uri);
-                final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
-
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                selectedImage.compress(Bitmap.CompressFormat.JPEG,100,baos);
-                byte[] b = baos.toByteArray();
-                String encImage = Base64.encodeToString(b, Base64.DEFAULT);
-                return encImage;
-            } catch (IOException e) {
-                Log.e("BROMIDE", "File not found");
-            }
-            return null;
-        }
-    }
-
 }

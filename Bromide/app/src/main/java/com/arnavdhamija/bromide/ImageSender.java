@@ -28,13 +28,14 @@ public class ImageSender {
         if (null != encodedImage) {
             SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
             String hubAddress = sharedPreferences.getString("hub_address", "");
+            String fromUser = sharedPreferences.getString("my_identity", "");
 
             Date date = new Date();
             String epochDelta = String.valueOf(date.getTime());
 
             Action action = new Action("SendBromideImage", new AppEndpointContext("Bromide", "0.1", "55"));
             action.addArgument("encodedImage", encodedImage);
-            action.addArgument("fromUser", "motog4+");
+            action.addArgument("fromUser", fromUser);
             action.addArgument("toUser", hubAddress);
             action.addArgument("sentAt", epochDelta);
 

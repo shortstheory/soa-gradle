@@ -1,0 +1,93 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:1-44:12
+	package
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+		INJECTED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml
+uses-permission#de.tubs.ibr.dtn.permission.DTN_COMMUNICATION
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:10:5-84
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:10:22-81
+uses-permission#in.swifiic.plat.app.suta.andi.USER
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:11:5-74
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:11:22-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:12:22-78
+application
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:14:5-43:19
+activity#in.swifiic.plat.helper.andi.ui.UserChooserActivity
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:15:9-16:81
+	android:label
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:15:19-46
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:16:13-78
+service#in.swifiic.plat.helper.andi.GenericService
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:18:9-78
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:18:18-75
+receiver#in.swifiic.plat.helper.andi.IBRDtnReceiver
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:21:9-34:17
+	android:enabled
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:22:10-32
+	android:exported
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:24:10-33
+	android:permission
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:25:10-68
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:23:10-67
+intent-filter#de.tubs.ibr.dtn.intent.RECEIVE
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:27:10-29:26
+action#de.tubs.ibr.dtn.intent.RECEIVE
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:28:14-70
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:28:22-67
+intent-filter#de.tubs.ibr.dtn.intent.STATUS_REPORT
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:31:10-33:26
+action#de.tubs.ibr.dtn.intent.STATUS_REPORT
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:32:14-76
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:32:22-73
+receiver#in.swifiic.plat.helper.andi.HubAddressReceiver
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:36:9-40:20
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:36:19-80
+intent-filter#swifiic.suta.hubAddressUpdate
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:37:13-39:29
+action#swifiic.suta.hubAddressUpdate
+ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:38:17-72
+	android:name
+		ADDED from /home/nic/android-dev/andiStudio/Bromide/inswifiicandi/src/main/AndroidManifest.xml:38:25-69

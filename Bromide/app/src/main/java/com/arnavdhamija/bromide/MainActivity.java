@@ -22,6 +22,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import org.w3c.dom.Text;
 
 import java.io.ByteArrayOutputStream;
@@ -79,8 +81,9 @@ public class MainActivity extends SwifiicActivity {
                 Uri result = data.getData();
                 Log.d("BROMIDE", result.toString());
                 ImageView displayImage = (ImageView) findViewById(R.id.displayImage);
-                displayImage.setImageURI(result);
+//                displayImage.setImageURI(result);
 
+                Glide.with(this).load(result).into(displayImage);
                 ImageEncoder imageEncoder = new ImageEncoder(getApplicationContext(), result);
                 try {
                     imageEncoder.base64encode();

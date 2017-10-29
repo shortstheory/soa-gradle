@@ -78,7 +78,7 @@ public class GenericService extends IntentService {
     
     private void sendToHub(String message, String hubAddress) {
      
-    	Log.e(TAG,"sendingto hub function"+message+":"+hubAddress);
+    	Log.v(TAG,"sendingto hub function"+message+":"+hubAddress);
         Bundle b = new Bundle();
 
         SingletonEndpoint destination = new SingletonEndpoint(hubAddress);
@@ -192,7 +192,7 @@ public class GenericService extends IntentService {
           	String hubAddress = intent.getStringExtra("hub_address");       	
         	try
         	{
-        	Log.e(TAG,"Sending to hub"+msg+":"+hubAddress);
+        	Log.v(TAG,"Sending to hub"+msg+":"+hubAddress);
             sendToHub(msg, hubAddress);
 			} catch (Exception e) {
 				e.printStackTrace();

@@ -84,7 +84,7 @@ public class MainActivity extends SwifiicActivity {
 //                displayImage.setImageURI(result);
 
                 Glide.with(this).load(result).into(displayImage);
-                ImageEncoder imageEncoder = new ImageEncoder(getApplicationContext(), result);
+                ImageEncoder imageEncoder = new ImageEncoder(this, result);
                 try {
                     imageEncoder.base64encode();
                     payloadReady = true;

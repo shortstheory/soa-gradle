@@ -62,7 +62,7 @@ public class Helper {
             i.putExtra("action", msg); // msgTextToSend
             i.putExtra("hub_address", hubAddress);
             
-            Log.d("Helper", "Sending: " + msg + "To: " + hubAddress);
+            Log.v("Helper", "Sending: " + msg + "To: " + hubAddress);
             
             c.startService(i);
         } catch(Exception e) {

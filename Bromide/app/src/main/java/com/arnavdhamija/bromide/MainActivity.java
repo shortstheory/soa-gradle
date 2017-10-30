@@ -50,6 +50,8 @@ public class MainActivity extends SwifiicActivity {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         final String hubAddress = sharedPreferences.getString("hub_address", "");
 
+        toolbar.setTitle("Bromide");
+
         bromideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

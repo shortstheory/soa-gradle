@@ -24,14 +24,15 @@ import id.zelory.compressor.Compressor;
 
 class ImageEncoder implements Runnable {
     private Thread thread;
-    Context context;
+//    Context context;
+    Activity activity;
     Uri imageURI;
     String resultString;
     final int BITMAP_MAX_DIMENSION = 640;
 
-    ImageEncoder(Context ctx, Uri uri) {
+    ImageEncoder(Activity act, Uri uri) {
         imageURI = uri;
-        context = ctx;
+        activity = act;
     }
 
     @Override
@@ -46,7 +47,7 @@ class ImageEncoder implements Runnable {
 
     private void encodeImage(Uri uri) {
         try {
-            InputStream imageStream = context.getContentResolver().openInputStream(uri);
+            InputStream imageStream = activity.getContentResolver().openInputStream(uri);
             final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
             final float aspectRatio = (float) selectedImage.getWidth()/(float) selectedImage.getHeight();
             Bitmap resizedBitmap = null;
@@ -64,32 +65,29 @@ class ImageEncoder implements Runnable {
 
 
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            resizedBitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos); //32KB
+            resizedBitmap.compress(Bitmap.CompressFormat.JPEG, 60, baos); //32KB
             byte[] b = baos.toByteArray();
             String encImage = Base64.encodeToString(b, Base64.DEFAULT);
 
             Log.i("BROMIDE", "SelectedImageBytes: " + resizedBitmap.getByteCount());
-            TextView selectedSizeText = (TextView) ((Activity) context).findViewById(R.id.selectedSizeText);
-            TextView compressedSizeText = (TextView)((Activity) context).findViewById(R.id.compressedSizeText);
-            TextView compressionRatioText = (TextView)((Activity) context).findViewById(R.id.compressionRatioText);
 
+            final int selectedBytes = selectedImage.getByteCount();
+            final int resizedBytes = b.length;
 
-            runOnUiThread(new Runnable() {
+            activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
+                    TextView selectedSizeText = (TextView) activity.findViewById(R.id.selectedSizeText);
+                    TextView compressedSizeText = (TextView) activity.findViewById(R.id.compressedSizeText);
+                    TextView compressionRatioText = (TextView) activity.findViewById(R.id.compressionRatioText);
 
-//stuff that updates ui
-
+                    selectedSizeText.setText("Original Size: " + String.valueOf(selectedBytes));
+                    compressedSizeText.setText("Compressed Size: " + String.valueOf(resizedBytes));
+                    compressionRatioText.setText("Compression Ratio: " + String.valueOf((float) selectedBytes / resizedBytes));
                 }
             });
-            selectedSizeText.setText("Original Size: " + String.valueOf(selectedImage.getByteCount()));
-            compressedSizeText.setText("Compressed Size: " + String.valueOf(resizedBitmap.getByteCount()));
-            compressionRatioText.setText("Compression Ratio: " + String.valueOf((float)selectedImage.getByteCount() / resizedBitmap.getByteCount()));
 
-            //            Log.d("BROMIDE", "SelectedImageBytes: " + selectedImage.getByteCount() + ", Compressed Image bytes: " + compressImage.getByteCount());
-
-            ImageSender imageSender = new ImageSender(context);
-            imageSender.sendImage(encImage);
+            ImageSender.sendImage(activity, encImage);
         } catch (IOException e) {
             Log.e("BROMIDE", "File not found");
         }

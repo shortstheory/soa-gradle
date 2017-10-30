@@ -18,13 +18,7 @@ import java.util.Date;
  */
 
 public class ImageSender {
-    private Context context;
-
-    ImageSender(Context ctx) {
-        context = ctx;
-    }
-
-    void sendImage(String encodedImage) {
+    static void sendImage(Context context, String encodedImage) {
         if (null != encodedImage) {
             SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
             String hubAddress = sharedPreferences.getString("hub_address", "");

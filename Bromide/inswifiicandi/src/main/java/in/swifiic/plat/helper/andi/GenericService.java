@@ -176,16 +176,15 @@ public class GenericService extends IntentService {
         	String hubAddress = intent.getStringExtra("hub_address");
         	
             try {
-                Serializer serializer = new Persister();
-                @SuppressWarnings("unused")  // this is checking that XML is fine
-				Action req = serializer.read(Action.class, msg);
+//                Serializer serializer = new Persister();
+//                @SuppressWarnings("unused")  // this is checking that XML is fine
+//				Action req = serializer.read(Action.class, msg);
                 sendToHub(msg, hubAddress);
 			} catch (Exception e) {
 				e.printStackTrace();
 				Log.e(TAG, "Parse failed during send message for String: " + msg + "\n exception:" + e) ;
 			}
-        }
-        else if (Constants.SEND_INFO_INTENT.equals(action)) {
+        } else if (Constants.SEND_INFO_INTENT.equals(action)) {
             // retrieve the Action object message
         	String message=null;
         	String msg = intent.getStringExtra("action");

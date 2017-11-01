@@ -19,11 +19,14 @@ public final class Constants {
 	public static final String MSG_DELIVERED_APPHUB = "in.swifiic.app.HUB_RECEIVED";
 	
 	public static final String MARK_DELIVERED_INTENT = "in.swifiic.app.MARK_DELIVERED";
-	
+
+	public static final String SMALL_MESSAGE = "in.swifiic.app.SMALL_MESSAGE";
+
+	public static final String BIG_MESSAGE = "in.swifiic.app.BIG_MESSAGE";
+
 	public static final long LONG_LIFETIME = 3600*12;
 	
 	public static final long SHORT_LIFETIME = 3600;
-	
 	
 	public static final String PUBLIC_DIR_PATH = Environment.getExternalStorageDirectory().toString() + "/swifiic/";
 }

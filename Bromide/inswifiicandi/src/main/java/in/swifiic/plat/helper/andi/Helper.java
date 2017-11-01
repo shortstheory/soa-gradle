@@ -72,8 +72,7 @@ public class Helper {
 	}
 	
 	/**
-	 * @param f
-	 *            -> file type
+	 * @param \f -> file type
 	 * @return String -> Base64 encoded string of the file
 	 */
 	// TODO

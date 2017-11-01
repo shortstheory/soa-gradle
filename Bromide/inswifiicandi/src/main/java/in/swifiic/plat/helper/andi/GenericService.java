@@ -1,5 +1,8 @@
 package in.swifiic.plat.helper.andi;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.List;
 
 import org.simpleframework.xml.Serializer;
@@ -184,6 +187,18 @@ public class GenericService extends IntentService {
 				e.printStackTrace();
 				Log.e(TAG, "Parse failed during send message for String: " + msg + "\n exception:" + e) ;
 			}
+        } else if (Constants.SEND_BIG_MSG_INTENT.equals(action)) {
+            Log.d("GenServ", "Processing Big Goat");
+            String hubAddress = intent.getStringExtra("hub_address");
+            String filename = intent.getStringExtra("filename");
+            String msg = readFile(filename);
+
+            try {
+                sendToHub(msg, hubAddress);
+            } catch (Exception e) {
+                e.printStackTrace();
+                Log.e(TAG, "Well, OhWell");
+            }
         } else if (Constants.SEND_INFO_INTENT.equals(action)) {
             // retrieve the Action object message
         	String message=null;
@@ -199,6 +214,25 @@ public class GenericService extends IntentService {
 			}
         }
         
+    }
+
+    private String readFile(String fileName) {
+        try {
+            File file = getFileStreamPath(fileName);
+            byte[] bytes = new byte[(int)file.length()];
+
+            InputStream inputStream = new FileInputStream(file);
+            try {
+                inputStream.read(bytes);
+            } finally {
+                inputStream.close();
+            }
+            String enc = new String(bytes);
+            return enc;
+        } catch (Exception e) {
+            Log.e("BROMIDE", "Could not send image!");
+            return null;
+        }
     }
     
     SessionConnection mSessionConnection = new SessionConnection() {

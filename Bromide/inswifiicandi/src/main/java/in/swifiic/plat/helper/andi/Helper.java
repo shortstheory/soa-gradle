@@ -48,7 +48,7 @@ public class Helper {
         return null;
 	}
 	public static String sendAction(Action act, String hubAddress, Context c) { // 2ASK: we're all adding fromUser here!
-        try {
+        try { // 2ASK: why is this a string return type?!
         	// Loading my identity from preferences
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(c);
             String myIdentity = sharedPref.getString("my_identity", "");
@@ -69,6 +69,34 @@ public class Helper {
         	Log.e("sendAction", "Something goofy:" + e.getMessage());
         }
         return null;
+	}
+
+	public static void sendBigMessage(Action action, String hubAddress, Context c) {
+		try {
+			SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(c);
+			String myIdentity = sharedPref.getString("my_identity", "");
+
+			String msg = serializeAction(action);
+
+			FileOutputStream fileOutputStream;
+
+			try {
+				fileOutputStream = c.openFileOutput(Constants.ACTION_FILE, c.MODE_PRIVATE);
+				fileOutputStream.write(msg.getBytes());
+				fileOutputStream.close();
+			} catch (Exception e) {
+				Log.e("BROMIDE", "Action Save failed");
+			}
+
+			Intent i = new Intent(c, GenericService.class);
+			i.setAction(Constants.SEND_BIG_MSG_INTENT);
+			i.putExtra("hub_address", hubAddress);
+			i.putExtra("filename", Constants.ACTION_FILE);
+			Log.v("Helper", "Sending BIGMSG: " + msg + "To: " + hubAddress);
+			c.startService(i);
+		} catch (Exception e) {
+			Log.e("sendAction", "OH DEAR");
+		}
 	}
 	
 	/**

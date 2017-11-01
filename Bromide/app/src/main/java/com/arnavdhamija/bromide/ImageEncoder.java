@@ -90,7 +90,7 @@ class ImageEncoder extends AsyncTask<Uri, Void, Void> {
         FileOutputStream fileOutputStream;
 
         try {
-            fileOutputStream = activity.openFileOutput(compressedFilename, activity.MODE_PRIVATE);
+            fileOutputStream = activity.openFileOutput(filename, activity.MODE_PRIVATE);
             fileOutputStream.write(encImage.getBytes());
             fileOutputStream.close();
         } catch (Exception e) {

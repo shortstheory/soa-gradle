@@ -18,7 +18,7 @@ import java.util.Date;
  */
 
 public class ImageSender {
-    static void sendImage(Context context, String encodedImage) {
+    static void sendImage(Context context, String encodedImage, boolean bigMessage) {
         if (null != encodedImage) {
             SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
             String hubAddress = sharedPreferences.getString("hub_address", "");
@@ -32,8 +32,11 @@ public class ImageSender {
             action.addArgument("fromUser", fromUser);
             action.addArgument("toUser", hubAddress);
             action.addArgument("sentAt", epochDelta);
-
-            Helper.sendAction(action, hubAddress + "/Bromide", context);
+            if (bigMessage) {
+                Helper.sendBigMessage(action, hubAddress + "/Bromide", context);
+            } else {
+                Helper.sendAction(action, hubAddress + "/Bromide", context);
+            }
         }
     }
 }

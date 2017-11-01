@@ -10,8 +10,10 @@ public final class Constants {
 	
 	public static final String REPORT_DELIVERED_INTENT = "in.swifiic.app.REPORT_DELIVERED";
 	
+	public static final String SEND_BIG_MSG_INTENT = "in.swifiic.app.SEND_BIG_MSG";
+
 	public static final String SEND_MSG_INTENT = "in.swifiic.app.SEND_MSG";
-	
+
 	public static final String SEND_INFO_INTENT = "in.swifiic.app.SEND_INFO";
 	
 	public static final String NEWMSG_RECEIVED = "in.swifiic.app.DATA_RECEIVED";
@@ -23,6 +25,8 @@ public final class Constants {
 	public static final String SMALL_MESSAGE = "in.swifiic.app.SMALL_MESSAGE";
 
 	public static final String BIG_MESSAGE = "in.swifiic.app.BIG_MESSAGE";
+
+	public static final String ACTION_FILE = "action_file";
 
 	public static final long LONG_LIFETIME = 3600*12;
 	

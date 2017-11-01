@@ -5,16 +5,22 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.util.Base64;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.concurrent.ExecutionException;
 
 import id.zelory.compressor.Compressor;
 
@@ -22,30 +28,26 @@ import id.zelory.compressor.Compressor;
  * Created by nic on 25/10/17.
  */
 
-class ImageEncoder implements Runnable {
-    private Thread thread;
-//    Context context;
+class ImageEncoder extends AsyncTask<Uri, Void, Void> {
     Activity activity;
-    Uri imageURI;
     String resultString;
     final int BITMAP_MAX_DIMENSION = 640;
 
-    ImageEncoder(Activity act, Uri uri) {
-        imageURI = uri;
+    String compressedFilename;
+    String highResFilename;
+
+    int selectedBytes;
+    int resizedBytes;
+
+    ImageEncoder(Activity act, String compressed, String highRes) {
         activity = act;
+        compressedFilename = compressed;
+        highResFilename = highRes;
     }
 
     @Override
-    public void run() {
-        encodeImage(imageURI);
-    }
-
-    public void base64encode() throws InterruptedException {
-        thread = new Thread(this);
-        thread.start();
-    }
-
-    private void encodeImage(Uri uri) {
+    protected Void doInBackground(Uri... uris) {
+        Uri uri = uris[0];
         try {
             InputStream imageStream = activity.getContentResolver().openInputStream(uri);
             final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
@@ -62,34 +64,56 @@ class ImageEncoder implements Runnable {
                     resizedBitmap = Bitmap.createScaledBitmap(selectedImage, scaledWidth, BITMAP_MAX_DIMENSION, false);
                 }
             }
-
-
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            resizedBitmap.compress(Bitmap.CompressFormat.JPEG, 60, baos); //32KB
-            byte[] b = baos.toByteArray();
-            String encImage = Base64.encodeToString(b, Base64.DEFAULT);
-
-            Log.i("BROMIDE", "SelectedImageBytes: " + resizedBitmap.getByteCount());
-
-            final int selectedBytes = selectedImage.getByteCount();
-            final int resizedBytes = b.length;
-
-            activity.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    TextView selectedSizeText = (TextView) activity.findViewById(R.id.selectedSizeText);
-                    TextView compressedSizeText = (TextView) activity.findViewById(R.id.compressedSizeText);
-                    TextView compressionRatioText = (TextView) activity.findViewById(R.id.compressionRatioText);
-
-                    selectedSizeText.setText("Original Size: " + String.valueOf(selectedBytes));
-                    compressedSizeText.setText("Compressed Size: " + String.valueOf(resizedBytes));
-                    compressionRatioText.setText("Compression Ratio: " + String.valueOf((float) selectedBytes / resizedBytes));
-                }
-            });
-
-            ImageSender.sendImage(activity, encImage);
+            writeImageToFile(selectedImage, highResFilename);
+            writeImageToFile(resizedBitmap, compressedFilename);
         } catch (IOException e) {
             Log.e("BROMIDE", "File not found");
         }
+        return null;
+    }
+
+    private void writeImageToFile(Bitmap img, String filename) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        img.compress(Bitmap.CompressFormat.JPEG, 60, baos); //32KB
+        byte[] b = baos.toByteArray();
+        String encImage = Base64.encodeToString(b, Base64.DEFAULT);
+
+        Log.i("BROMIDE", "SelectedImageBytes: " + img.getByteCount());
+
+        if (filename == highResFilename) {
+            selectedBytes = img.getByteCount();
+        }
+        if (filename == compressedFilename) {
+            resizedBytes = b.length;
+        }
+
+        FileOutputStream fileOutputStream;
+
+        try {
+            fileOutputStream = activity.openFileOutput(compressedFilename, activity.MODE_PRIVATE);
+            fileOutputStream.write(encImage.getBytes());
+            fileOutputStream.close();
+        } catch (Exception e) {
+            Log.e("BROMIDE", "Image Save failed");
+        }
+
+    }
+
+    @Override
+    protected void onPostExecute(Void v) {
+        super.onPostExecute(v);
+        TextView selectedSizeText = (TextView) activity.findViewById(R.id.selectedSizeText);
+        TextView compressedSizeText = (TextView) activity.findViewById(R.id.compressedSizeText);
+        TextView compressionRatioText = (TextView) activity.findViewById(R.id.compressionRatioText);
+
+        Button sendCompressedButton = (Button) activity.findViewById(R.id.compressed_button);
+        Button sendHighResButton = (Button) activity.findViewById(R.id.highres_button);
+
+        selectedSizeText.setText("Original Size: " + String.valueOf(selectedBytes));
+        compressedSizeText.setText("Compressed Size: " + String.valueOf(resizedBytes));
+        compressionRatioText.setText("Compression Ratio: " + String.valueOf((float) selectedBytes / resizedBytes));
+
+        sendCompressedButton.setVisibility(View.VISIBLE);
+        sendHighResButton.setVisibility(View.VISIBLE);
     }
 }

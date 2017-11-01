@@ -27,6 +27,8 @@ import com.bumptech.glide.Glide;
 import org.w3c.dom.Text;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -38,6 +40,9 @@ public class MainActivity extends SwifiicActivity {
     String encodedString = null;
     boolean payloadReady = false;
 
+    final String compressedFilename = "compressedImage";
+    final String highResFilename = "highResImage";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +50,8 @@ public class MainActivity extends SwifiicActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         Button bromideButton = (Button) findViewById(R.id.bromide_button);
+        Button sendCompressedButton = (Button) findViewById(R.id.compressed_button);
+        Button sendHighResButton = (Button) findViewById(R.id.highres_button);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -64,6 +71,30 @@ public class MainActivity extends SwifiicActivity {
             }
         });
 
+        sendCompressedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    String base64img = readFile(compressedFilename);
+                    ImageSender.sendImage(v.getContext(), base64img);
+                } catch (Exception e) {
+                    Log.e("BROMIDE", "Could not send image!");
+                }
+            }
+        });
+
+        sendHighResButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    String base64img = readFile(highResFilename);
+                    ImageSender.sendImage(v.getContext(), base64img);
+                } catch (Exception e) {
+                    Log.e("BROMIDE", "Could not send image!");
+                }
+            }
+        });
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,6 +105,8 @@ public class MainActivity extends SwifiicActivity {
                 }
             }
         });
+
+
     }
 
     @Override
@@ -83,16 +116,30 @@ public class MainActivity extends SwifiicActivity {
                 Uri result = data.getData();
                 Log.d("BROMIDE", result.toString());
                 ImageView displayImage = (ImageView) findViewById(R.id.displayImage);
-//                displayImage.setImageURI(result);
 
                 Glide.with(this).load(result).into(displayImage);
-                ImageEncoder imageEncoder = new ImageEncoder(this, result);
-                try {
-                    imageEncoder.base64encode();
-                    payloadReady = true;
-                } catch (InterruptedException e) {
-                }
+                ImageEncoder imageEncoder = new ImageEncoder(this, compressedFilename, highResFilename);
+                imageEncoder.execute(result);
             }
+        }
+    }
+
+    private String readFile(String fileName) {
+        try {
+            File file = getFileStreamPath(fileName);
+            byte[] bytes = new byte[(int)file.length()];
+
+            InputStream inputStream = new FileInputStream(file);
+            try {
+                inputStream.read(bytes);
+            } finally {
+                inputStream.close();
+            }
+            String enc = new String(bytes);
+            return enc;
+        } catch (Exception e) {
+            Log.e("BROMIDE", "Could not send image!");
+            return null;
         }
     }
 }

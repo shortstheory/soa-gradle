@@ -26,7 +26,8 @@
             android:id="@+id/bromide_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:text="@string/main_button_text" />
 
         <ImageView
@@ -53,6 +54,20 @@
             android:id="@+id/compressionRatioText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/compressed_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sendcompress_button_text"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/highres_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sendhighres_button_text"
+            android:visibility="invisible" />
 
     </LinearLayout>
 </RelativeLayout>

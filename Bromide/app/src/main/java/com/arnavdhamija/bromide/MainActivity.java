@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -77,6 +78,7 @@ public class MainActivity extends SwifiicActivity {
                 try {
                     String base64img = readFile(compressedFilename);
                     ImageSender.sendImage(v.getContext(), base64img, false);
+                    Toast.makeText(getApplicationContext(), "Compressed image sent!", Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
                     Log.e("BROMIDE", "Could not send image!");
                 }
@@ -90,6 +92,7 @@ public class MainActivity extends SwifiicActivity {
                     Log.d("BROMIDE", "HDIMG");
                     String base64img = readFile(highResFilename);
                     ImageSender.sendImage(v.getContext(), base64img, true);
+                    Toast.makeText(getApplicationContext(), "High res image sent!", Toast.LENGTH_LONG).show();
 //                } catch (Exception e) {
 //                    Log.e("BROMIDE", "Could not send image!");
 //                }

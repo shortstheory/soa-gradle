@@ -80,28 +80,18 @@ public class GenericService extends IntentService {
     }
     
     private void sendToHub(String message, String hubAddress) {
-     
-    	Log.v(TAG,"sendingto hub function"+message+":"+hubAddress);
+       	Log.v(TAG,"sendingto hub function"+message+":"+hubAddress);
         Bundle b = new Bundle();
-
         SingletonEndpoint destination = new SingletonEndpoint(hubAddress);
-        
         // set the destination of the bundle
         b.setDestination(destination);
-        
         // limit t/he lifetime of the bundle to 60 seconds
-        b.setLifetime(Constants.LONG_LIFETIME); 
-        
+        b.setLifetime(Constants.LONG_LIFETIME);
         // set status report requests for bundle reception
         b.set(ProcFlags.REQUEST_REPORT_OF_BUNDLE_RECEPTION, true);
-        
         // set destination for status reports
         b.setReportto(SingletonEndpoint.ME);
-    
-        
-        
        // String outId = mClient.getDTNService().getEndpoint()
-              
         try {
             // send the bundle
             if(null == mSession ){
@@ -123,8 +113,45 @@ public class GenericService extends IntentService {
         } catch (SessionDestroyedException e) {
             Log.e(TAG, "could not send the message", e);
         } catch (Exception e) {
-
             Log.e(TAG, "Send Message b=" + b + "  message=" + message +" excp="+ e + " mSession=" + mSession);
+        }
+    }
+
+    private void sendToHub(ParcelFileDescriptor pfd, String hubAddress) {
+        Log.v(TAG,"sendingto hub function"+pfd.toString()+":"+hubAddress);
+        Bundle b = new Bundle();
+        SingletonEndpoint destination = new SingletonEndpoint(hubAddress);
+        // set the destination of the bundle
+        b.setDestination(destination);
+        // limit t/he lifetime of the bundle to 60 seconds
+        b.setLifetime(Constants.LONG_LIFETIME);
+        // set status report requests for bundle reception
+        b.set(ProcFlags.REQUEST_REPORT_OF_BUNDLE_RECEPTION, true);
+        // set destination for status reports
+        b.setReportto(SingletonEndpoint.ME);
+        // String outId = mClient.getDTNService().getEndpoint()
+        try {
+            // send the bundle
+            if(null == mSession ){
+                // explore if session connects in 100 milliseconds
+                Thread.currentThread().sleep(100,0);
+            }
+            if(null==mSession){
+                Log.e(TAG, "Session not connected - not sending the message");
+                // TODO - add interface through binding to know if the message was sent
+                return;
+            }
+            BundleID ret = mSession.send(b, pfd);
+            if (ret == null) {
+                Log.e(TAG, "could not send the message");
+            } else {
+                Log.d(TAG, "Bundle sent, BundleID: " + ret.toString() + "Bundle Source:" + mClient.getEndpoint());
+            }
+        } catch (SessionDestroyedException e) {
+            Log.e(TAG, "could not send the message", e);
+        } catch (Exception e) {
+            Log.e(TAG, "Send Message b=" + b + "  message=" + pfd.toString() +" excp="+ e.getMessage()
+                    + " mSession=" + mSession);
         }
     }
 
@@ -188,13 +215,12 @@ public class GenericService extends IntentService {
 				Log.e(TAG, "Parse failed during send message for String: " + msg + "\n exception:" + e) ;
 			}
         } else if (Constants.SEND_BIG_MSG_INTENT.equals(action)) {
-            Log.d("GenServ", "Processing Big Goat");
+            Log.d("GenServ", "Processing Big PACK");
             String hubAddress = intent.getStringExtra("hub_address");
             String filename = intent.getStringExtra("filename");
-            String msg = readFile(filename);
-
             try {
-                sendToHub(msg, hubAddress);
+                ParcelFileDescriptor pfd = ParcelFileDescriptor.open(getFileStreamPath(filename), ParcelFileDescriptor.MODE_READ_ONLY);
+                sendToHub(pfd, hubAddress);
             } catch (Exception e) {
                 e.printStackTrace();
                 Log.e(TAG, "Well, OhWell");

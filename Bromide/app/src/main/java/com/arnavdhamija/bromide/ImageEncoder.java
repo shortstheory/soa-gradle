@@ -64,17 +64,17 @@ class ImageEncoder extends AsyncTask<Uri, Void, Void> {
                     resizedBitmap = Bitmap.createScaledBitmap(selectedImage, scaledWidth, BITMAP_MAX_DIMENSION, false);
                 }
             }
-            writeImageToFile(selectedImage, highResFilename);
-            writeImageToFile(resizedBitmap, compressedFilename);
+            writeImageToFile(selectedImage, highResFilename, 90);
+            writeImageToFile(resizedBitmap, compressedFilename, 60);
         } catch (IOException e) {
             Log.e("BROMIDE", "File not found");
         }
         return null;
     }
 
-    private void writeImageToFile(Bitmap img, String filename) {
+    private void writeImageToFile(Bitmap img, String filename, int quality) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        img.compress(Bitmap.CompressFormat.JPEG, 60, baos); //32KB
+        img.compress(Bitmap.CompressFormat.JPEG, quality, baos); //32KB
         byte[] b = baos.toByteArray();
         String encImage = Base64.encodeToString(b, Base64.DEFAULT);
 

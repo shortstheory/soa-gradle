@@ -91,7 +91,7 @@ public class MainActivity extends SwifiicActivity {
 //                try {
                     Log.d("BROMIDE", "HDIMG");
                     String base64img = readFile(highResFilename);
-                    ImageSender imageSender = new ImageSender(v.getContext(), false);
+                    ImageSender imageSender = new ImageSender(v.getContext(), true);
                     imageSender.execute(base64img);
 //                    ImageSender.sendImage(v.getContext(), base64img, true);
 //                } catch (Exception e) {

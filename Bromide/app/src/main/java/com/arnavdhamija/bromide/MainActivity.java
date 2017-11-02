@@ -77,8 +77,8 @@ public class MainActivity extends SwifiicActivity {
             public void onClick(View v) {
                 try {
                     String base64img = readFile(compressedFilename);
-                    ImageSender.sendImage(v.getContext(), base64img, false);
-                    Toast.makeText(getApplicationContext(), "Compressed image sent!", Toast.LENGTH_LONG).show();
+                    ImageSender imageSender = new ImageSender(v.getContext(), false);
+                    imageSender.execute(base64img);
                 } catch (Exception e) {
                     Log.e("BROMIDE", "Could not send image!");
                 }
@@ -91,8 +91,9 @@ public class MainActivity extends SwifiicActivity {
 //                try {
                     Log.d("BROMIDE", "HDIMG");
                     String base64img = readFile(highResFilename);
-                    ImageSender.sendImage(v.getContext(), base64img, true);
-                    Toast.makeText(getApplicationContext(), "High res image sent!", Toast.LENGTH_LONG).show();
+                    ImageSender imageSender = new ImageSender(v.getContext(), false);
+                    imageSender.execute(base64img);
+//                    ImageSender.sendImage(v.getContext(), base64img, true);
 //                } catch (Exception e) {
 //                    Log.e("BROMIDE", "Could not send image!");
 //                }

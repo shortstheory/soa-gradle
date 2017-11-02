@@ -51,6 +51,8 @@ class ImageEncoder extends AsyncTask<Uri, Void, Void> {
         try {
             InputStream imageStream = activity.getContentResolver().openInputStream(uri);
             final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
+            imageStream.close();
+
             final float aspectRatio = (float) selectedImage.getWidth()/(float) selectedImage.getHeight();
             Bitmap resizedBitmap = null;
             if (aspectRatio > 1) {

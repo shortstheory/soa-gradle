@@ -73,6 +73,7 @@ public class Helper {
 
 	public static void sendBigMessage(Action action, String hubAddress, Context c) {
 		try {
+			final String filename = "action_file";
 			SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(c);
 			String myIdentity = sharedPref.getString("my_identity", "");
 
@@ -81,7 +82,7 @@ public class Helper {
 			FileOutputStream fileOutputStream;
 
 			try {
-				fileOutputStream = c.openFileOutput(Constants.ACTION_FILE, c.MODE_PRIVATE);
+				fileOutputStream = c.openFileOutput(filename, c.MODE_PRIVATE);
 				fileOutputStream.write(msg.getBytes());
 				fileOutputStream.close();
 			} catch (Exception e) {
@@ -91,7 +92,7 @@ public class Helper {
 			Intent i = new Intent(c, GenericService.class);
 			i.setAction(Constants.SEND_BIG_MSG_INTENT);
 			i.putExtra("hub_address", hubAddress);
-			i.putExtra("filename", Constants.ACTION_FILE);
+			i.putExtra("filename", filename);
 			Log.v("Helper", "Sending BIGMSG: " + msg + "To: " + hubAddress);
 			c.startService(i);
 		} catch (Exception e) {

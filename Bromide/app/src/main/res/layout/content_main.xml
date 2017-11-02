@@ -59,6 +59,7 @@
             android:id="@+id/compressed_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/sendcompress_button_text"
             android:visibility="invisible" />
 

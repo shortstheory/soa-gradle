@@ -241,25 +241,6 @@ public class GenericService extends IntentService {
         }
         
     }
-
-    private String readFile(String fileName) {
-        try {
-            File file = getFileStreamPath(fileName);
-            byte[] bytes = new byte[(int)file.length()];
-
-            InputStream inputStream = new FileInputStream(file);
-            try {
-                inputStream.read(bytes);
-            } finally {
-                inputStream.close();
-            }
-            String enc = new String(bytes);
-            return enc;
-        } catch (Exception e) {
-            Log.e("BROMIDE", "Could not send image!");
-            return null;
-        }
-    }
     
     SessionConnection mSessionConnection = new SessionConnection() {
 

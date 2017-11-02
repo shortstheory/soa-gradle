@@ -22,11 +22,7 @@ public final class Constants {
 	
 	public static final String MARK_DELIVERED_INTENT = "in.swifiic.app.MARK_DELIVERED";
 
-	public static final String SMALL_MESSAGE = "in.swifiic.app.SMALL_MESSAGE";
-
-	public static final String BIG_MESSAGE = "in.swifiic.app.BIG_MESSAGE";
-
-	public static final String ACTION_FILE = "action_file";
+//	public static final String ACTION_FILE = "action_file";
 
 	public static final long LONG_LIFETIME = 3600*12;
 	

@@ -304,7 +304,7 @@ public class GenericService extends IntentService {
 	            sendBroadcast(updatedIntent);
 			} catch (Exception e) {
 				e.printStackTrace();
-				Log.e(TAG,"Parse failed for message: " + msg);
+				Log.e(TAG,"Parse failed for message: " + msg + e.getMessage());
 			}
             // free the bundle header
             mBundle = null;

@@ -23,19 +23,23 @@ public final class R {
   public static final class id {
     public static final int appname=0x7f030000;
     public static final int currTime=0x7f030001;
-    public static final int imageIcon=0x7f030002;
-    public static final int imageView1=0x7f030003;
-    public static final int remainingCredit=0x7f030004;
-    public static final int settings=0x7f030005;
-    public static final int swifficver=0x7f030006;
-    public static final int textAlias=0x7f030007;
-    public static final int textName=0x7f030008;
-    public static final int textView=0x7f030009;
-    public static final int textView3=0x7f03000a;
-    public static final int textView5=0x7f03000b;
-    public static final int textViewNotification=0x7f03000c;
-    public static final int transactions=0x7f03000d;
-    public static final int users=0x7f03000e;
+    public static final int downloadButton=0x7f030002;
+    public static final int imageIcon=0x7f030003;
+    public static final int imageView1=0x7f030004;
+    public static final int radioButton=0x7f030005;
+    public static final int radioButton2=0x7f030006;
+    public static final int radioGroup=0x7f030007;
+    public static final int remainingCredit=0x7f030008;
+    public static final int settings=0x7f030009;
+    public static final int swifficver=0x7f03000a;
+    public static final int textAlias=0x7f03000b;
+    public static final int textName=0x7f03000c;
+    public static final int textView=0x7f03000d;
+    public static final int textView3=0x7f03000e;
+    public static final int textView5=0x7f03000f;
+    public static final int textViewNotification=0x7f030010;
+    public static final int transactions=0x7f030011;
+    public static final int users=0x7f030012;
   }
   public static final class layout {
     public static final int activity_main=0x7f040000;

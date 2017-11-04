@@ -11,9 +11,9 @@ public final class R {
         public static final int ic_node = 0x7f020002;
     }
     public static final class id {
-        public static final int imageIcon = 0x7f030002;
-        public static final int textAlias = 0x7f030007;
-        public static final int textName = 0x7f030008;
+        public static final int imageIcon = 0x7f030003;
+        public static final int textAlias = 0x7f03000b;
+        public static final int textName = 0x7f03000c;
     }
     public static final class layout {
         public static final int userlist_item_lib = 0x7f040002;

@@ -23,7 +23,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import in.swifiic.plat.helper.andi.xml.Action;
 import in.swifiic.plat.helper.andi.AppEndpointContext;
@@ -41,6 +44,21 @@ public class MainActivity extends SwifiicActivity  {
 
     private TextView remainingCredit,currTime,transactions;
 
+    private void sendAppRequest(String appRequested) {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        String hubAddress = sharedPreferences.getString("hub_address", "");
+        String fromUser = sharedPreferences.getString("my_identity", "");
+
+        Date date = new Date();
+        String epochDelta = String.valueOf(date.getTime());
+
+        Action action = new Action("RequestAppMsg", new AppEndpointContext("SUTA", "0.1", "1"));
+        action.addArgument("appRequested", appRequested);
+        action.addArgument("fromUser", fromUser);
+        action.addArgument("toUser", hubAddress);
+        action.addArgument("sentAt", epochDelta);
+        Helper.sendAction(action, hubAddress + "/suta", getApplicationContext());
+    }
    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +66,23 @@ public class MainActivity extends SwifiicActivity  {
         super.onCreate(savedInstanceState);
         SharedPreferences pref =PreferenceManager.getDefaultSharedPreferences(this);
         setContentView(R.layout.activity_main);
+
+        Button downloadButton = (Button) findViewById(R.id.downloadButton);
+        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+
+        downloadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int selectedID = radioGroup.getCheckedRadioButtonId();
+                RadioButton radioButton = (RadioButton) findViewById(selectedID);
+
+                String appRequested = radioButton.getText().toString();
+                if (appRequested != null) {
+                    Toast.makeText(getApplicationContext(), radioButton.getText(), Toast.LENGTH_SHORT).show();
+                    sendAppRequest(appRequested);
+                }
+            }
+        });
 
 
         // getting the current time and checking the difference from last updated time

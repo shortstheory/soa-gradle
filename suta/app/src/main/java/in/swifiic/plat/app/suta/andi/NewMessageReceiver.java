@@ -9,12 +9,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
@@ -133,7 +135,12 @@ public class NewMessageReceiver extends BroadcastReceiver {
 				String filename = "myapp.apk";
 				try {
 					byte[] decodedApk = Base64.decode(encodedApk);
-					ByteArrayOutputStream baos;
+					File file = new File(Environment.getExternalStorageDirectory(), filename);
+//					FileOutputStream fileOutputStream = context.openFileOutput(filename, context.MODE_WORLD_READABLE);
+					FileOutputStream fileOutputStream = new FileOutputStream(file);
+					fileOutputStream.write(decodedApk);
+					fileOutputStream.close();
+					Log.d(TAG, "Finally saved a fileXY!");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}

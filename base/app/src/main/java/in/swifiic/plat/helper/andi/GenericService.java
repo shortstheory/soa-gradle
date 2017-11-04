@@ -1,5 +1,6 @@
 package in.swifiic.plat.helper.andi;
 
+import java.io.FileOutputStream;
 import java.util.List;
 
 import org.simpleframework.xml.Serializer;
@@ -296,6 +297,24 @@ public class GenericService extends IntentService {
                 @SuppressWarnings("unused")  // this is checking that XML is fine
 				Notification notif = serializer.read(Notification.class, msg);
                 Log.d(TAG, "Got a message: " + msg.toString());
+                if (msg.toString().length() > 10000) {
+                    Log.d(TAG, "Got to move this to a file to avoid weird problems");
+                    try {
+                        String filename = "BigNotif";
+                        FileOutputStream fileOutputStream = getApplicationContext().openFileOutput(filename, getApplicationContext().MODE_PRIVATE);
+                        fileOutputStream.write(msg.toString().getBytes());
+                        fileOutputStream.close();
+
+                        updatedIntent.putExtra("bigpacket",true);
+                        updatedIntent.putExtra("filename", filename);
+                    } catch (Exception e) {
+                        Log.e(TAG, "BigFile Save failed");
+                    }
+                    sendBroadcast(updatedIntent);
+                    Log.d(TAG, "BBroadcast sent");
+                    return;
+                }
+                //change this implementation for huge messages to pass around an FD instead
 	            updatedIntent.putExtra("notification", msg);
 	            if(null != GE_TEST && mBundle.getDestination().equals(GE_TEST)) {
 	            	updatedIntent.putExtra("multicast", "true");

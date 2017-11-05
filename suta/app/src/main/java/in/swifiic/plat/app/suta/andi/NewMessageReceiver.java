@@ -52,7 +52,7 @@ public class NewMessageReceiver extends BroadcastReceiver {
 					inputStream.read(bytes);
 					String payload = new String(bytes);
 					Notification notif = Helper.parseNotification(payload);
-					Log.d(TAG, "damn, i'm good!");
+					Log.d(TAG, "good!");
 					handleNotification(context, notif);
 				} finally {
 					inputStream.close();
@@ -129,7 +129,7 @@ public class NewMessageReceiver extends BroadcastReceiver {
 						Log.e(TAG,"Out dated Notification discarding it");
 				}
 			} else if(opName.equals("SendAPKMessage")) {
-				Log.d(TAG, "YoBoys!");
+				Log.d(TAG, "Going2send!");
 				String encodedApk = notif.getArgument("TestData");
 				Log.d(TAG, encodedApk);
 				String filename = "myapp.apk";

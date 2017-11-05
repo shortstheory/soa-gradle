@@ -310,17 +310,14 @@ public class GenericService extends IntentService {
                     } catch (Exception e) {
                         Log.e(TAG, "BigFile Save failed");
                     }
-                    sendBroadcast(updatedIntent);
-                    Log.d(TAG, "BBroadcast sent");
-                    return;
+                } else {
+                    updatedIntent.putExtra("notification", msg);
+                    if (null != GE_TEST && mBundle.getDestination().equals(GE_TEST)) {
+                        updatedIntent.putExtra("multicast", "true");
+                        Log.d(TAG, "Got via Multicast");
+                    }
                 }
-                //change this implementation for huge messages to pass around an FD instead
-	            updatedIntent.putExtra("notification", msg);
-	            if(null != GE_TEST && mBundle.getDestination().equals(GE_TEST)) {
-	            	updatedIntent.putExtra("multicast", "true");
-	            	Log.d(TAG, "Got via Multicast");
-	            }
-	            sendBroadcast(updatedIntent);
+                sendBroadcast(updatedIntent);
 			} catch (Exception e) {
 				e.printStackTrace();
 				Log.e(TAG,"Parse failed for message: " + msg + e.getMessage());

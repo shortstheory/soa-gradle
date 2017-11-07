@@ -23,7 +23,9 @@ public final class Constants {
 	public static final long LONG_LIFETIME = 3600*12;
 	
 	public static final long SHORT_LIFETIME = 3600;
-	
-	
+
+	public static final String SEND_BIG_MSG_INTENT = "in.swifiic.app.SEND_BIG_MSG";
+
+
 	public static final String PUBLIC_DIR_PATH = Environment.getExternalStorageDirectory().toString() + "/swifiic/";
 }

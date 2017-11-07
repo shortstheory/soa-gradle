@@ -47,7 +47,7 @@ public class Helper {
         }
         return null;
 	}
-	public static String sendAction(Action act, String hubAddress, Context c) {
+	public static void sendAction(Action act, String hubAddress, Context c) {
         try {
         	// Loading my identity from preferences
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(c);
@@ -68,7 +68,6 @@ public class Helper {
         } catch(Exception e) {
         	Log.e("sendAction", "Something goofy:" + e.getMessage());
         }
-        return null;
 	}
 
 	public static void sendBigMessage(Action action, String hubAddress, Context c) {

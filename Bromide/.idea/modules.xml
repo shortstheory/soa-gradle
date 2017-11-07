@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Bromide.iml" filepath="$PROJECT_DIR$/Bromide.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/inswifiicandi/inswifiicandi.iml" filepath="$PROJECT_DIR$/inswifiicandi/inswifiicandi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../base/app/base.iml" filepath="$PROJECT_DIR$/../base/app/base.iml" />
     </modules>
   </component>
 </project>

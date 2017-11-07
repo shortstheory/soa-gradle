@@ -1,6 +1,0 @@
-in.swifiic.plat.andi
-int drawable ic_node 0x7f090001
-int id imageIcon 0x7f0c0001
-int id textAlias 0x7f0c0002
-int id textName 0x7f0c0003
-int layout userlist_item_lib 0x7f0f0001

@@ -17,8 +17,9 @@ ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidMani
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:22.2.1] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [de.tubs.ibr.dtn:library:1.1.1] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/de.tubs.ibr.dtn/library/1.1.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.1.1] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml
@@ -29,12 +30,12 @@ MERGED from [com.android.support:support-v4:22.2.1] /home/nic/android-dev/andiSt
 		INJECTED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml
 uses-permission#de.tubs.ibr.dtn.permission.DTN_COMMUNICATION
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:11:5-84
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:11:5-84
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:11:5-84
 	android:name
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:11:22-81
 uses-permission#in.swifiic.plat.app.suta.andi.USER
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:12:5-74
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:12:5-74
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:12:5-74
 	android:name
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:12:22-71
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -43,8 +44,8 @@ ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidMani
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:13:22-77
 application
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:15:5-84:19
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:15:5-43:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:15:5-43:19
+MERGED from [com.android.support:support-v4:23.1.1] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:18:9-41
 	android:allowBackup
@@ -67,12 +68,12 @@ ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidMani
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:21:13-66
 service#in.swifiic.plat.helper.andi.GenericService
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:27:9-78
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:20:9-78
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:20:9-78
 	android:name
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:27:18-75
 activity#in.swifiic.plat.helper.andi.ui.UserChooserActivity
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:29:9-32:52
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:16:9-18:43
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:16:9-18:43
 	android:screenOrientation
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:32:13-49
 	android:label
@@ -97,7 +98,7 @@ ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidMani
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:39:17-63
 receiver#in.swifiic.plat.helper.andi.IBRDtnReceiver
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:43:9-61:20
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:23:9-37:20
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:23:9-37:20
 	android:enabled
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:45:13-35
 	android:exported
@@ -124,7 +125,7 @@ ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidMani
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:57:25-76
 receiver#in.swifiic.plat.helper.andi.HubAddressReceiver
 ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:62:9-66:20
-MERGED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:38:9-42:20
+MERGED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:38:9-42:20
 	android:name
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:62:19-80
 intent-filter#swifiic.suta.hubAddressUpdate
@@ -160,10 +161,10 @@ ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidMani
 	android:name
 		ADDED from /home/nic/android-dev/andiStudio/msngr/msngrandi/src/main/AndroidManifest.xml:81:27-74
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:13:5-81
+ADDED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:13:22-78
+		ADDED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:13:22-78
 intent-filter#de.tubs.ibr.dtn.intent.RECEIVE
-ADDED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:30:13-32:29
+ADDED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:30:13-32:29
 intent-filter#de.tubs.ibr.dtn.intent.STATUS_REPORT
-ADDED from [msngr:inswifiicandi:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/inswifiicandi/unspecified/AndroidManifest.xml:34:13-36:29
+ADDED from [msngr:base:unspecified] /home/nic/android-dev/andiStudio/msngr/msngrandi/build/intermediates/exploded-aar/msngr/base/unspecified/AndroidManifest.xml:34:13-36:29

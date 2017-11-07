@@ -1,2 +1,5 @@
-include ':inswifiicandi'
 include ':msngrandi'
+
+include ':base'
+project(':base').projectDir = new File(rootDir, '../base/app')
+

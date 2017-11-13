@@ -131,7 +131,7 @@ public class NewMessageReceiver extends BroadcastReceiver {
 				String filename = appFileName + ".apk";
 				try {
 					byte[] decodedApk = Base64.decode(encodedApk);
-					File file = new File(Environment.getExternalStorageDirectory(), filename);
+					File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), filename);
 					FileOutputStream fileOutputStream = new FileOutputStream(file);
 					fileOutputStream.write(decodedApk);
 					fileOutputStream.close();

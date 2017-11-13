@@ -52,7 +52,7 @@ public class MainActivity extends SwifiicActivity  {
         Date date = new Date();
         String epochDelta = String.valueOf(date.getTime());
 
-        Action action = new Action("RequestAppMsg", new AppEndpointContext("SUTA", "0.1", "1"));
+        Action action = new Action("RequestApp", new AppEndpointContext("SUTA", "0.1", "1"));
         action.addArgument("appRequested", appRequested);
         action.addArgument("fromUser", fromUser);
         action.addArgument("toUser", hubAddress);

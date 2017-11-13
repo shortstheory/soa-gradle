@@ -41,7 +41,6 @@ public class NewMessageReceiver extends BroadcastReceiver {
 //			NewMessageReceiver.pref = PreferenceManager.getDefaultSharedPreferences(context);
 //		}
 		if (intent.hasExtra("bigpacket")) {
-			Log.d(TAG, "I should do something about big parcels");
 			String filename = intent.getStringExtra("filename");
 			try {
 				File file = context.getFileStreamPath(filename);
@@ -58,7 +57,7 @@ public class NewMessageReceiver extends BroadcastReceiver {
 					inputStream.close();
 				}
 			} catch (Exception e) {
-				Log.d(TAG, "File not found! Can't do it!");
+				Log.d(TAG, "File not found!");
 			}
 		} else if (intent.hasExtra("notification")) {
         	String payload = intent.getStringExtra("notification");
@@ -129,22 +128,20 @@ public class NewMessageReceiver extends BroadcastReceiver {
 						Log.e(TAG,"Out dated Notification discarding it");
 				}
 			} else if(opName.equals("SendAPKMessage")) {
-				Log.d(TAG, "Going2send!");
-				String encodedApk = notif.getArgument("TestData");
+				String encodedApk = notif.getArgument("encodedApk");
+				String appFileName = notif.getArgument("appFileName");
 				Log.d(TAG, encodedApk);
-				String filename = "myapp.apk";
+				String filename = appFileName + ".apk";
 				try {
 					byte[] decodedApk = Base64.decode(encodedApk);
 					File file = new File(Environment.getExternalStorageDirectory(), filename);
-//					FileOutputStream fileOutputStream = context.openFileOutput(filename, context.MODE_WORLD_READABLE);
 					FileOutputStream fileOutputStream = new FileOutputStream(file);
 					fileOutputStream.write(decodedApk);
 					fileOutputStream.close();
-					Log.d(TAG, "Finally saved a fileXY!");
+					Log.d(TAG, "File Saved!");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-				//just have to do base64 decoding here and should be good
 			}
 		}
     }

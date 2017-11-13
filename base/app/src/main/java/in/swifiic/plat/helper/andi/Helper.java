@@ -95,7 +95,7 @@ public class Helper {
 			Log.v("Helper", "Sending BIGMSG: " + msg + "To: " + hubAddress);
 			c.startService(i);
 		} catch (Exception e) {
-			Log.e("sendAction", "OH DEAR");
+			Log.e("sendAction", "Exception in sending file " + e.getMessage());
 		}
 	}
 	

@@ -352,8 +352,6 @@ public class GenericService extends IntentService {
                         FileOutputStream fileOutputStream = getApplicationContext().openFileOutput(filename, getApplicationContext().MODE_PRIVATE);
                         fileOutputStream.write(msg.toString().getBytes());
                         fileOutputStream.close();
-
-                        updatedIntent.putExtra("bigpacket",true);
                         updatedIntent.putExtra("filename", filename);
                     } catch (Exception e) {
                         Log.e(TAG, "BigFile Save failed");

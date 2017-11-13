@@ -12,6 +12,7 @@ import android.net.wifi.WifiManager;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -34,13 +35,8 @@ public class NewMessageReceiver extends BroadcastReceiver {
 	//public static SharedPreferences pref = null;
 
 	@Override
-	public void onReceive(Context context, Intent intent) {
-
-//		if(null == NewMessageReceiver.pref) {
-//			mcontext = context;
-//			NewMessageReceiver.pref = PreferenceManager.getDefaultSharedPreferences(context);
-//		}
-		if (intent.hasExtra("bigpacket")) {
+	public void onReceive(Context context, Intent intent) { //2ASK: maybe this should be async task
+		if (intent.hasExtra("filename")) {
 			String filename = intent.getStringExtra("filename");
 			try {
 				File file = context.getFileStreamPath(filename);
@@ -53,6 +49,7 @@ public class NewMessageReceiver extends BroadcastReceiver {
 					Notification notif = Helper.parseNotification(payload);
 					Log.d(TAG, "good!");
 					handleNotification(context, notif);
+					Toast.makeText(context, "APK saved to Downloads folder", Toast.LENGTH_LONG).show();
 				} finally {
 					inputStream.close();
 				}

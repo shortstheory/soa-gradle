@@ -346,10 +346,14 @@ public class GenericService extends IntentService {
                 @SuppressWarnings("unused")  // this is checking that XML is fine
 				Notification notif = serializer.read(Notification.class, msg);
                 Log.d(TAG, "Got a message: " + msg.toString());
+
+                // arnavdhamija
+                // If the Notification is too big (e.g. a Base64 encoded image), just save it to a file and pass the filename to the app's message receiver.
+                // Prevents nasty Binder errors because of Android's Intent size limitations
                 if (msg.toString().length() > Constants.MAX_SMALL_MESSAGE_LENGTH) {
                     Log.d(TAG, "Got to move this to a file to avoid weird problems");
                     try {
-                        String filename = "BigNotif";
+                        String filename = "BigNotif"; // 2do - could work on naming conventions
                         FileOutputStream fileOutputStream = getApplicationContext().openFileOutput(filename, getApplicationContext().MODE_PRIVATE);
                         fileOutputStream.write(msg.toString().getBytes());
                         fileOutputStream.close();

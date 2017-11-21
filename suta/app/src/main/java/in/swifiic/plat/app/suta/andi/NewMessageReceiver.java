@@ -36,12 +36,12 @@ public class NewMessageReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) { //2ASK: maybe this should be async task
-		if (intent.hasExtra("filename")) {
+		if (intent.hasExtra("filename")) { // Received as a response to RequestApp
 			String filename = intent.getStringExtra("filename");
 			try {
 				File file = context.getFileStreamPath(filename);
 				byte[] bytes = new byte[(int) file.length()];
-
+				// Read the Notification from a file and give it to handleNotification for processing
 				InputStream inputStream = new FileInputStream(file);
 				try {
 					inputStream.read(bytes);
@@ -49,7 +49,6 @@ public class NewMessageReceiver extends BroadcastReceiver {
 					Notification notif = Helper.parseNotification(payload);
 					Log.d(TAG, "good!");
 					handleNotification(context, notif);
-					Toast.makeText(context, "APK saved to Downloads folder", Toast.LENGTH_LONG).show();
 				} finally {
 					inputStream.close();
 				}
@@ -125,6 +124,7 @@ public class NewMessageReceiver extends BroadcastReceiver {
 						Log.e(TAG,"Out dated Notification discarding it");
 				}
 			} else if(opName.equals("SendAPKMessage")) {
+    			// Write the APK to a file and alert the user about the same in a Toast
 				String encodedApk = notif.getArgument("encodedApk");
 				String appFileName = notif.getArgument("appFileName");
 				Log.d(TAG, encodedApk);
@@ -135,6 +135,7 @@ public class NewMessageReceiver extends BroadcastReceiver {
 					FileOutputStream fileOutputStream = new FileOutputStream(file);
 					fileOutputStream.write(decodedApk);
 					fileOutputStream.close();
+					Toast.makeText(context, "APK saved to Downloads folder", Toast.LENGTH_LONG).show();
 					Log.d(TAG, "File Saved!");
 				} catch (IOException e) {
 					e.printStackTrace();

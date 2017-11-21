@@ -44,6 +44,7 @@ public class MainActivity extends SwifiicActivity  {
 
     private TextView remainingCredit,currTime,transactions;
 
+    // Creates an Action for requesting an APK and sends it to the Hub.
     private void sendAppRequest(String appRequested) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         String hubAddress = sharedPreferences.getString("hub_address", "");
@@ -73,6 +74,7 @@ public class MainActivity extends SwifiicActivity  {
         downloadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // arnavdhamija - not at all a good approach, needs to dynamically update the list
                 int selectedID = radioGroup.getCheckedRadioButtonId();
                 RadioButton radioButton = (RadioButton) findViewById(selectedID);
 
@@ -179,7 +181,7 @@ public class MainActivity extends SwifiicActivity  {
 	{
         SharedPreferences pref =PreferenceManager.getDefaultSharedPreferences(this);
         Action act = new Action("SendInfo", aeCtx);
-        WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        WifiManager manager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE); // arnavdhamija - Android N optimisation
         WifiInfo info = manager.getConnectionInfo();
         String macAddress = info.getMacAddress();
         act.addArgument("macAddress", macAddress);

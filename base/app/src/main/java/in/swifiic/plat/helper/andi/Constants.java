@@ -24,6 +24,8 @@ public final class Constants {
 	
 	public static final long SHORT_LIFETIME = 3600;
 
+	public static final long MAX_SMALL_MESSAGE_LENGTH = 10000;
+
 	public static final String SEND_BIG_MSG_INTENT = "in.swifiic.app.SEND_BIG_MSG";
 
 

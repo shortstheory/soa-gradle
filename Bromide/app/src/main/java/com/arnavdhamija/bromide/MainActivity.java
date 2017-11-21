@@ -37,8 +37,7 @@ import in.swifiic.plat.helper.andi.ui.SwifiicActivity;
 
 public class MainActivity extends SwifiicActivity {
 
-    final static int PICK_IMAGE = 1;
-    String encodedString = null;
+    final static int PICK_IMAGE = 1; // required for getting the result from the image picker intent
     boolean payloadReady = false;
 
     final String compressedFilename = "compressedImage";
@@ -60,11 +59,11 @@ public class MainActivity extends SwifiicActivity {
 
         toolbar.setTitle("Bromide");
 
+        // Setup callbacks for UI elements
         bromideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("BROMIDE", "HUB_ADDR" + hubAddress);
-
+                // Image chooser Intent gets fired here
                 Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
@@ -88,32 +87,29 @@ public class MainActivity extends SwifiicActivity {
         sendHighResButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                try {
+                try {
                     Log.d("BROMIDE", "HDIMG");
                     String base64img = readFile(highResFilename);
                     ImageSender imageSender = new ImageSender(v.getContext(), true);
                     imageSender.execute(base64img);
-//                    ImageSender.sendImage(v.getContext(), base64img, true);
-//                } catch (Exception e) {
-//                    Log.e("BROMIDE", "Could not send image!");
-//                }
+                } catch (Exception e) {
+                    Log.e("BROMIDE", "Could not send image!");
+                }
             }
         });
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "TBD", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, hubAddress, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                if (payloadReady) {
-
-                }
             }
         });
 
 
     }
 
+    // Gets called after the Image is chosen from the Intent
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PICK_IMAGE) {
@@ -121,8 +117,9 @@ public class MainActivity extends SwifiicActivity {
                 Uri result = data.getData();
                 Log.d("BROMIDE", result.toString());
                 ImageView displayImage = (ImageView) findViewById(R.id.displayImage);
-
+                // We use the Glide library for loading the image into the ImageView
                 Glide.with(this).load(result).into(displayImage);
+                // Base 64 encode both images and write to their respective files
                 ImageEncoder imageEncoder = new ImageEncoder(this, compressedFilename, highResFilename);
                 imageEncoder.execute(result);
             }

@@ -224,6 +224,7 @@ public class GenericService extends IntentService {
 				Log.e(TAG, "Parse failed during send message for String: " + msg + "\n exception:" + e) ;
 			}
         } else if (Constants.SEND_BIG_MSG_INTENT.equals(action)) {
+            // Used for sending large messages by taking the FD of the file
             Log.d("GenServ", "Processing Big PACK");
             String hubAddress = intent.getStringExtra("hub_address");
             String filename = intent.getStringExtra("filename");
@@ -232,7 +233,7 @@ public class GenericService extends IntentService {
                 sendToHub(pfd, hubAddress);
             } catch (Exception e) {
                 e.printStackTrace();
-                Log.e(TAG, "Well, OhWell");
+                Log.e(TAG, "Sending big message failed.");
             }
         } else if (Constants.SEND_INFO_INTENT.equals(action)) {
             // retrieve the Action object message
@@ -345,7 +346,7 @@ public class GenericService extends IntentService {
                 @SuppressWarnings("unused")  // this is checking that XML is fine
 				Notification notif = serializer.read(Notification.class, msg);
                 Log.d(TAG, "Got a message: " + msg.toString());
-                if (msg.toString().length() > 10000) {
+                if (msg.toString().length() > Constants.MAX_SMALL_MESSAGE_LENGTH) {
                     Log.d(TAG, "Got to move this to a file to avoid weird problems");
                     try {
                         String filename = "BigNotif";

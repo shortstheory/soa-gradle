@@ -47,6 +47,9 @@ public class Helper {
         }
         return null;
 	}
+
+	// The standard way of sending messages.
+	// Use this for small messages such as text messages or telemetry data.
 	public static void sendAction(Action act, String hubAddress, Context c) {
         try {
         	// Loading my identity from preferences
@@ -70,6 +73,8 @@ public class Helper {
         }
 	}
 
+	// Used for sending large messages (e.g. > 100KB in size).
+	// Works by writing the message to a file and passing then passing the file descriptor to the DTN Client.
 	public static void sendBigMessage(Action action, String hubAddress, Context c) {
 		try {
 			final String filename = "action_file";

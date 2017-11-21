@@ -37,9 +37,9 @@ public class ImageSender extends AsyncTask<String, Void, Void> {
             String fromUser = sharedPreferences.getString("my_identity", "");
 
             Date date = new Date();
-            String epochDelta = String.valueOf(date.getTime());
+            String epochDelta = String.valueOf(date.getTime()); // fancy way of saying millisec since Unix epoch
 
-            Action action = new Action("SendBromideImage", new AppEndpointContext("Bromide", "0.1", "55"));
+            Action action = new Action("SendBromideImage", new AppEndpointContext("Bromide", "0.1", "55")); //2do - how to decide appid?
             action.addArgument("encodedImage", encodedImage);
             action.addArgument("fromUser", fromUser);
             action.addArgument("toUser", hubAddress);
